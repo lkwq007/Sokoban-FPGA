@@ -1,0 +1,10 @@
+library verilog;
+use verilog.vl_types.all;
+entity X_OPAD is
+    generic(
+        LOC             : string  := "UNPLACED"
+    );
+    port(
+        PAD             : out    vl_logic
+    );
+end X_OPAD;

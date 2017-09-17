@@ -1,0 +1,12 @@
+# Output products list for <wayRom>
+wayRom.asy
+wayRom.mif
+wayRom.ngc
+wayRom.sym
+wayRom.v
+wayRom.veo
+wayRom.vhd
+wayRom.vho
+wayRom.xco
+wayRom_flist.txt
+wayRom_xmdf.tcl

@@ -1,0 +1,92 @@
+D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_controller
+
+Top level modules:
+	ms_controller
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_quick.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_quick.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_round_quick
+
+Top level modules:
+	ms_round_quick
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_lfsr_tb.v {1 {vlog -work work -vopt {D:\Course\advanced-digital-system-design\allinone\src\minesweeper\ms_gen_lfsr_tb.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_gen_lfsr_tb
+
+Top level modules:
+	ms_gen_lfsr_tb
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_tb.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_round_tb
+
+Top level modules:
+	ms_round_tb
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_tb.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_gen_tb
+
+Top level modules:
+	ms_gen_tb
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller_tb.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_controller_tb
+
+Top level modules:
+	ms_controller_tb
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_top.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_top.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_top
+
+Top level modules:
+	ms_top
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/LFSR_Plus.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/LFSR_Plus.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module LFSR_Plus
+
+Top level modules:
+	LFSR_Plus
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_check.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_check.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_round_check
+
+Top level modules:
+	ms_round_check
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_counter.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_counter.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_counter
+
+Top level modules:
+	ms_counter
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_round
+
+Top level modules:
+	ms_round
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_timer.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_timer.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_timer
+
+Top level modules:
+	ms_timer
+
+} {} {}} D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen.v {1 {vlog -work work -vopt D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ms_gen
+
+Top level modules:
+	ms_gen
+
+} {} {}}

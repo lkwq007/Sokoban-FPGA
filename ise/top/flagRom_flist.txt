@@ -1,0 +1,12 @@
+# Output products list for <flagRom>
+flagRom.asy
+flagRom.mif
+flagRom.ngc
+flagRom.sym
+flagRom.v
+flagRom.veo
+flagRom.vhd
+flagRom.vho
+flagRom.xco
+flagRom_flist.txt
+flagRom_xmdf.tcl

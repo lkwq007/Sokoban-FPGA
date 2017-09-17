@@ -1,0 +1,2 @@
+xst -ise "C:/allinone/ise/top/top.ise" -intstyle ise -ifn switch.xst -ofn switch.syr
+xst -ise "C:/allinone/ise/top/top.ise" -intstyle ise -ifn switch.xst -ofn switch.syr

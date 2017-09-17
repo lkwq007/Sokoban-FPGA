@@ -1,0 +1,12 @@
+# Output products list for <manRomLeft>
+manRomLeft.asy
+manRomLeft.mif
+manRomLeft.ngc
+manRomLeft.sym
+manRomLeft.v
+manRomLeft.veo
+manRomLeft.vhd
+manRomLeft.vho
+manRomLeft.xco
+manRomLeft_flist.txt
+manRomLeft_xmdf.tcl

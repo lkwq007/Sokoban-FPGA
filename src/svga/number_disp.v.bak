@@ -1,0 +1,63 @@
+module number_disp(clk, x_pos, y_pos, x0, y0, pixel, step);
+input clk;
+input [7:0] step;
+input [9:0]x_pos, y_pos, x0, y0;
+output pixel;
+
+wire[9:0] x_disp, y_disp;
+wire[2:0] x_temp;
+wire[3:0] y_temp;    
+wire pixel;
+wire letter_order;
+reg[4:0] zk;
+
+assign x_disp=x_pos-x0, y_disp=y_pos-y0;
+assign x_temp=x_disp[3:1]-1,y_temp=y_disp[4:1];//
+assign letter_order=x_disp[4]; 
+
+always @(posedge clk)
+begin
+ if(letter_order==0)
+  begin
+    case(step[7:4])
+      4'd0:zk=5'd0;
+      4'd1:zk=5'd1;
+      4'd2:zk=5'd2;
+      4'd3:zk=5'd3;
+      4'd4:zk=5'd4;
+      4'd5:zk=5'd5;
+      4'd6:zk=5'd21;
+      4'd7:zk=5'd22;
+      4'd8:zk=5'd23;
+      4'd9:zk=5'd24;
+      default:zk=5'd24;
+    endcase
+  end
+ else if(letter_order==1)
+  begin
+    case(step[3:0])
+      4'd0:zk=5'd0;
+      4'd1:zk=5'd1;
+      4'd2:zk=5'd2;
+      4'd3:zk=5'd3;
+      4'd4:zk=5'd4;
+      4'd5:zk=5'd5;
+      4'd6:zk=5'd21;
+      4'd7:zk=5'd22;
+      4'd8:zk=5'd23;
+      4'd9:zk=5'd24;
+      default:zk=5'd24;
+    endcase
+  end
+ end
+ 
+wire [7:0]dout,dout_temp; 
+ZkROM   ZkROM (
+		.addr ({zk,y_temp}),
+		.clk(clk),
+		.dout(dout)
+		);
+assign dout_temp=dout<<x_temp;
+assign pixel = dout_temp[7];
+		
+endmodule

@@ -1,0 +1,34 @@
+`define _EN_LEVEL_UP 10'd40 
+`define _EN_LEVEL_DOWN 10'd71 
+`define _EN_LEVEL_LEFT 10'd344 
+`define _EN_LEVEL_RIGHT 10'd455 
+
+`define _EN_RETRY_UP 10'd452 
+`define _EN_RETRY_DOWN 10'd483 
+`define _EN_RETRY_LEFT 10'd280
+`define _EN_RETRY_RIGHT 10'd391
+
+`define _EN_RETRACT_UP 10'd452 
+`define _EN_RETRACT_DOWN 10'd483 
+`define _EN_RETRACT_LEFT 10'd404 
+`define _EN_RETRACT_RIGHT 10'd515 
+
+`define _EN_NEXT_UP 10'd502 
+`define _EN_NEXT_DOWN 10'd533 
+`define _EN_NEXT_LEFT 10'd348 
+`define _EN_NEXT_RIGHT 10'd443 
+
+`define _EN_STEP_UP 10'd40 
+`define _EN_STEP_DOWN 10'd71
+`define _EN_STEP_LEFT 10'd515 
+`define _EN_STEP_RIGHT 10'd626
+
+`define _EN_MESSAGE_UP 10'd556 
+`define _EN_MESSAGE_DOWN 10'd571 
+`define _EN_MESSAGE_LEFT 10'd288 
+`define _EN_MESSAGE_RIGHT 10'd511
+
+`define X_BOUNDARY_LEFT 10'd272
+`define X_BOUNDARY_RIGHT 10'd528
+`define Y_BOUNDARY_UP 10'd91
+`define Y_BOUNDARY_DOWN 10'd347

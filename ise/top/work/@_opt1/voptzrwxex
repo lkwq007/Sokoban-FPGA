@@ -1,0 +1,18 @@
+library verilog;
+use verilog.vl_types.all;
+entity X_LATCHE is
+    generic(
+        INIT            : integer := 0;
+        LOC             : string  := "UNPLACED";
+        XON             : string  := "TRUE";
+        MSGON           : string  := "TRUE"
+    );
+    port(
+        O               : out    vl_logic;
+        CLK             : in     vl_logic;
+        GE              : in     vl_logic;
+        I               : in     vl_logic;
+        RST             : in     vl_logic;
+        SET             : in     vl_logic
+    );
+end X_LATCHE;

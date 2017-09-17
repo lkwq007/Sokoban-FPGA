@@ -1,0 +1,52 @@
+# Reading C:/modeltech_6.5/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5 Jan 22 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {top.tdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module top
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	top
+# 	glbl
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L simprims_ver -lib work -t 1ps +maxdelays top glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.top(fast)
+# Loading simprims_ver.X_BUF(fast)
+# Loading simprims_ver.X_MUX2(fast)
+# Loading simprims_ver.X_XOR2(fast)
+# Loading simprims_ver.X_AND2(fast)
+# Loading simprims_ver.X_MUX2(fast__1)
+# Loading simprims_ver.X_LUT4(fast)
+# Loading simprims_ver.X_OBUFT(fast)
+# Loading simprims_ver.X_OBUF(fast)
+# Loading simprims_ver.X_DCM(fast)
+# Loading simprims_ver.X_BUFGMUX(fast)
+# Loading simprims_ver.X_INV(fast)
+# Loading simprims_ver.X_RAMB16_S18(fast)
+# Loading simprims_ver.X_RAMB16_S9(fast)
+# Loading simprims_ver.X_RAMB16_S1(fast)
+# Loading simprims_ver.X_SFF(fast)
+# Loading simprims_ver.X_FF(fast)
+# Loading simprims_ver.X_LATCHE(fast)
+# Loading simprims_ver.X_SFF(fast__1)
+# Loading simprims_ver.X_LUT4(fast__1)
+# Loading work.glbl(fast)
+# Loading instances from netgen/par/top_timesim.sdf
+# Loading timing data from netgen/par/top_timesim.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /top  File: netgen/par/top_timesim.v

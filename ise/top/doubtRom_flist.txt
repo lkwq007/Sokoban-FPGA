@@ -1,0 +1,12 @@
+# Output products list for <doubtRom>
+doubtRom.asy
+doubtRom.mif
+doubtRom.ngc
+doubtRom.sym
+doubtRom.v
+doubtRom.veo
+doubtRom.vhd
+doubtRom.vho
+doubtRom.xco
+doubtRom_flist.txt
+doubtRom_xmdf.tcl

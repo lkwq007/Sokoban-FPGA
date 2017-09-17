@@ -1,0 +1,97 @@
+`include "parameter_vga.v"
+
+
+module letter_disp(clk, x_pos, y_pos, x0, y0, pixel, stage, win,lose);
+input  clk, win, lose;
+input [1:0]stage;
+input [9:0]x_pos, y_pos, x0, y0;
+output pixel;
+ 
+wire[9:0] x_disp, y_disp;
+wire[2:0] x_temp;
+wire[3:0] y_temp;    
+wire[2:0] letter_order; 
+wire pixel;
+reg[4:0] zk;
+reg temp;
+ 
+assign x_disp=x_pos-x0, y_disp=y_pos-y0;
+assign x_temp=x_disp[3:1]-1,y_temp=y_disp[4:1]; 
+assign letter_order=x_disp[6:4]; 
+
+always @(posedge clk)
+  begin
+    case(letter_order)
+      3'd0:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;
+             else if(x0==`_EN_LEVEL_LEFT) zk=5'd6;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd19;
+             else if(x0==`_EN_RETRY_LEFT) zk=5'd19;
+             else zk=5'd15; 
+           end
+      3'd1:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd6;
+             else if(x0==`_EN_LEVEL_LEFT) zk=5'd11;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd14;
+             else if(x0==`_EN_RETRY_LEFT) zk=5'd15;
+             else zk=5'd11; 
+           end
+      3'd2:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd8;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd25;
+             else if(x0==`_EN_LEVEL_LEFT) zk=5'd17;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd11;
+             else if(x0==`_EN_RETRY_LEFT) zk=5'd11;
+             else zk=5'd16;
+           end
+      3'd3:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd12;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd26;  
+             else if(x0==`_EN_LEVEL_LEFT)zk=5'd11;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd20;
+             else if(x0==`_EN_RETRY_LEFT) zk=5'd16;
+             else zk=5'd15;
+           end
+      3'd4:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd14;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd11;   
+             else if(x0==`_EN_LEVEL_LEFT)zk=5'd13;
+             else if(x0==`_EN_RETRY_LEFT)zk=5'd15;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd16;
+             else zk=5'd9;
+           end
+      3'd5:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;  
+             else if(x0==`_EN_LEVEL_LEFT)zk=5'd19;
+             else if(x0==`_EN_RETRY_LEFT)zk=5'd18;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd19;
+             else zk=5'd10;
+           end
+      3'd6:begin 
+             if(win==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;
+             else if(lose==1&&x0==`_EN_LEVEL_LEFT) zk=5'd19;  
+             else if((x0==`_EN_LEVEL_LEFT)&&(stage == 2'd0))zk=5'd0;
+             else if((x0 == `_EN_LEVEL_LEFT)&&(stage == 2'd1))zk=5'd1;
+             else if((x0 == `_EN_LEVEL_LEFT)&&(stage == 2'd2))zk=5'd2;
+             else if((x0 == `_EN_LEVEL_LEFT)&&(stage == 2'd3))zk=5'd3;
+             else if(x0 == `_EN_RETRY_LEFT) zk=5'd19;
+             else if(x0==`_EN_NEXT_LEFT) zk=5'd19;
+             else zk=5'd16;
+           end
+      default:zk=5'd19;
+    endcase
+  end
+
+wire [7:0] dout,dout_temp; 
+ZkROM   ZkROM (
+    .addr ({zk,y_temp}),
+    .clk(clk),
+    .dout(dout)
+    );
+assign dout_temp=dout<<x_temp;
+assign pixel = dout_temp[7];
+    
+endmodule

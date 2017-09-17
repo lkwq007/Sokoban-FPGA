@@ -1,0 +1,12 @@
+# Output products list for <cellRom>
+cellRom.asy
+cellRom.mif
+cellRom.ngc
+cellRom.sym
+cellRom.v
+cellRom.veo
+cellRom.vhd
+cellRom.vho
+cellRom.xco
+cellRom_flist.txt
+cellRom_xmdf.tcl

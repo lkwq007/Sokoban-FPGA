@@ -1,0 +1,46 @@
+
+module bottom_layer(x_pos, y_pos, stage, win, sys_clk, Red0, Green0, Blue0, RqFlag0,step);
+input  [9:0]x_pos, y_pos;
+input  sys_clk, win;
+input  [1:0]stage;
+input  [7:0]step;
+
+output [7:0]Red0, Green0, Blue0;
+output RqFlag0;
+  
+wire  en_level, en_retry, en_retract,en_next,en_step,en_message;
+assign en_level= (x_pos>=`_EN_LEVEL_LEFT)&&(x_pos<=`_EN_LEVEL_RIGHT)&&(y_pos>=`_EN_LEVEL_UP)&&(y_pos<=`_EN_LEVEL_DOWN);			
+assign en_retry= (x_pos>=`_EN_RETRY_LEFT)&&(x_pos<=`_EN_RETRY_RIGHT)&&(y_pos>=`_EN_RETRY_UP)&&(y_pos<=`_EN_RETRY_DOWN);
+assign en_retract=(x_pos>=`_EN_RETRACT_LEFT)&&(x_pos<=`_EN_RETRACT_RIGHT)&&(y_pos>=`_EN_RETRACT_UP)&&(y_pos<=`_EN_RETRACT_DOWN);
+assign en_next=(x_pos>=`_EN_NEXT_LEFT)&&(x_pos<=`_EN_NEXT_RIGHT)&&(y_pos>=`_EN_NEXT_UP)&&(y_pos<=`_EN_NEXT_DOWN);
+assign en_step=(x_pos>=`_EN_STEP_LEFT)&&(x_pos<=`_EN_STEP_RIGHT)&&(y_pos>=`_EN_STEP_UP)&&(y_pos<=`_EN_STEP_DOWN);
+assign en_message=(x_pos>=`_EN_MESSAGE_LEFT)&&(x_pos<=`_EN_MESSAGE_RIGHT)&&(y_pos>=`_EN_MESSAGE_UP)&&(y_pos<=`_EN_MESSAGE_DOWN);
+
+wire pixel0,pixel1,pixel2,pixel3,pixel4,pixel5;
+letter_disp letter_disp_level  (.x_pos(x_pos), .y_pos(y_pos), .clk(sys_clk), .x0(`_EN_LEVEL_LEFT), .y0(`_EN_LEVEL_UP), .pixel(pixel0), .stage(stage), .win(win));
+letter_disp letter_disp_retry  (.x_pos(x_pos), .y_pos(y_pos), .clk(sys_clk), .x0(`_EN_RETRY_LEFT), .y0(`_EN_RETRY_UP), .pixel(pixel1), .stage(stage), .win(win));
+letter_disp letter_disp_retract(.x_pos(x_pos), .y_pos(y_pos), .clk(sys_clk), .x0(`_EN_RETRACT_LEFT), .y0(`_EN_RETRACT_UP), .pixel(pixel2), .stage(stage), .win(win));
+letter_disp letter_disp_next (.x_pos(x_pos), .y_pos(y_pos), .clk(sys_clk), .x0(`_EN_NEXT_LEFT), .y0(`_EN_NEXT_UP), .pixel(pixel3), .stage(stage), .win(win));
+number_disp number_disp_step(.x_pos(x_pos), .y_pos(y_pos), .clk(sys_clk), .x0(`_EN_STEP_LEFT), .y0(`_EN_STEP_UP), .pixel(pixel4),.step(step));
+word_disp word_disp_message(.x_pos(x_pos), .y_pos(y_pos), .clk(sys_clk), .x0(`_EN_MESSAGE_LEFT), .y0(`_EN_MESSAGE_UP), .pixel(pixel5));
+
+wire [14:0] addr;
+wire[7:0] bottom_red,bottom_green,bottom_blue;
+assign addr={y_pos[6:0], x_pos[6:0]};
+bottomROM   bottomROM (
+		.addr (addr),
+		.clk(sys_clk),
+		.en(1),
+		.dout({bottom_red,bottom_green,bottom_blue})
+		);
+
+wire EN;
+assign EN = en_retry|en_retract|en_level|en_next|en_step|en_message;
+assign pixel = en_level? pixel0: en_retry? pixel1:en_retract ?pixel2: en_next? pixel3:en_step? pixel4:en_message? pixel5: 0;
+assign Red0  =pixel? 8'd0:EN ? 8'd255:bottom_red;
+assign Green0=pixel? 8'd0:EN ? 8'd255:bottom_green;
+assign Blue0 =pixel? 8'd255:EN ? 8'd255:bottom_blue;
+assign RqFlag0=1;
+endmodule
+
+

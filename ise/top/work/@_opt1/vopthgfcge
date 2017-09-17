@@ -1,0 +1,15 @@
+library verilog;
+use verilog.vl_types.all;
+entity X_LUT4 is
+    generic(
+        INIT            : integer := 0;
+        LOC             : string  := "UNPLACED"
+    );
+    port(
+        O               : out    vl_logic;
+        ADR0            : in     vl_logic;
+        ADR1            : in     vl_logic;
+        ADR2            : in     vl_logic;
+        ADR3            : in     vl_logic
+    );
+end X_LUT4;

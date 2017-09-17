@@ -1,0 +1,12 @@
+# Output products list for <openRom>
+openRom.asy
+openRom.mif
+openRom.ngc
+openRom.sym
+openRom.v
+openRom.veo
+openRom.vhd
+openRom.vho
+openRom.xco
+openRom_flist.txt
+openRom_xmdf.tcl

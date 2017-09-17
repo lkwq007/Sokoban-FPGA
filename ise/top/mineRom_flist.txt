@@ -1,0 +1,12 @@
+# Output products list for <mineRom>
+mineRom.asy
+mineRom.mif
+mineRom.ngc
+mineRom.sym
+mineRom.v
+mineRom.veo
+mineRom.vhd
+mineRom.vho
+mineRom.xco
+mineRom_flist.txt
+mineRom_xmdf.tcl

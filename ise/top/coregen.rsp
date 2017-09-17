@@ -1,0 +1,10 @@
+NEWPROJECT "C:/allinone/ise/top"
+SETPROJECT "C:/allinone/ise/top"
+SET BusFormat = BusFormatAngleBracketNotRipped
+SET devicefamily = virtex2p
+SET device = xc2vp30
+SET package = ff896
+SET speedgrade = -7
+SET FlowVendor = Foundation_iSE
+SET VerilogSim = True
+SET VHDLSim = True

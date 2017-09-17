@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="ZkROM" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ZkROM YourInstanceName (
+    .addr(addr), // Bus [8 : 0] 
+    .clk(clk),
+    .dout(dout)); // Bus [7 : 0] 
+
+ 
+		</Template>
+		<Template label="wordROM" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+wordROM YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout)); // Bus [7 : 0] 
+
+ 
+		</Template>
+		<Template label="wallRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+wallRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="manRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+manRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="dstRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+dstRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="boxDstRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+boxDstRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="wayRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+wayRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="boxRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+boxRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="bottomROM" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+bottomROM YourInstanceName (
+    .addr(addr), // Bus [13 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="manRomUp" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+manRomUp YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="manRomRight" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+manRomRight YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="manRomLeft" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+manRomLeft YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="flagRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+flagRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="mineRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+mineRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="doubtRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+doubtRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="cellRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+cellRom YourInstanceName (
+    .addr(addr), // Bus [9 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+		<Template label="openRom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+openRom YourInstanceName (
+    .addr(addr), // Bus [13 : 0] 
+    .clk(clk),
+    .dout(dout), // Bus [23 : 0] 
+    .en(en));
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="ZkROM" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ZkROM
+    port (
+    addr: IN std_logic_VECTOR(8 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : ZkROM
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout);
+ 
+		</Template>
+		<Template label="wordROM" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component wordROM
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : wordROM
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout);
+ 
+		</Template>
+		<Template label="wallRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component wallRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : wallRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="manRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component manRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : manRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="dstRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component dstRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : dstRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="boxDstRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component boxDstRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : boxDstRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="wayRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component wayRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : wayRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="boxRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component boxRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : boxRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="bottomROM" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component bottomROM
+    port (
+    addr: IN std_logic_VECTOR(13 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : bottomROM
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="manRomUp" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component manRomUp
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : manRomUp
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="manRomRight" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component manRomRight
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : manRomRight
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="manRomLeft" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component manRomLeft
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : manRomLeft
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="flagRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component flagRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : flagRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="mineRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component mineRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : mineRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="doubtRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component doubtRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : doubtRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="cellRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component cellRom
+    port (
+    addr: IN std_logic_VECTOR(9 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : cellRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+		<Template label="openRom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component openRom
+    port (
+    addr: IN std_logic_VECTOR(13 downto 0);
+    clk: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    en: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : openRom
+        port map (
+            addr =&gt; addr,
+            clk =&gt; clk,
+            dout =&gt; dout,
+            en =&gt; en);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

@@ -1,0 +1,5 @@
+# begin LFP file C:\allinone\ise\top\top.lfp
+designfile top.v
+parttype xc2vp30-7-ff896
+bus_delimiter 1;
+set_busdelim_onsave 1;

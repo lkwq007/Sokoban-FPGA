@@ -1,0 +1,528 @@
+m255
+K3
+13
+cModel Technology
+dD:\Course\advanced-digital-system-design\minesweeper\sim
+vdffre
+VWg:_mZO[faJ8cSgkgF]_U0
+r1
+31
+IijY9?6k;e41HB[MVjN>hL0
+Z0 dD:\Course\advanced-digital-system-design\allinone\sim
+w1499325654
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_dffre.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_dffre.v
+L0 14
+Z1 OL;L;10.1c;51
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 gkfK=iU^iWaeaQCb8AIM52
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_dffre.v|
+!s108 1500436041.923000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_dffre.v|
+!s85 0
+!i10b 1
+vgame_controller
+VJ`RC`JdL?M9bBPKP7@74P3
+r1
+31
+I39GKM>4045jB2E_WTIW?k3
+Z3 dD:\Course\advanced-digital-system-design\allinone\sim
+w1500018006
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_controller.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_controller.v
+L0 14
+R1
+R2
+!s100 b[Zobzf6FI<MEWa6:S[Y52
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_controller.v|
+!s108 1500436041.152000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_controller.v|
+!s85 0
+!i10b 1
+vgame_controller_tb
+VNe@C`o@8Xec50n2zXGEVn2
+r1
+31
+IIPU`=Z;o85?<7MDg6S<7T3
+R3
+w1500435556
+8D:\Course\advanced-digital-system-design\allinone\src\game_core\game_controller_tb.v
+FD:\Course\advanced-digital-system-design\allinone\src\game_core\game_controller_tb.v
+L0 14
+R1
+R2
+!s100 JU9TmgH00VaWf?KlYS_2i3
+!s90 -reportprogress|300|-work|work|-vopt|D:\Course\advanced-digital-system-design\allinone\src\game_core\game_controller_tb.v|
+!s108 1500436041.307000
+!s107 D:\Course\advanced-digital-system-design\allinone\src\game_core\game_controller_tb.v|
+!s85 0
+!i10b 1
+vgame_core
+V54dA6h>0zdXl;M^R;nkO@1
+r1
+31
+IGJ6HiDJWC1aQ3B?cZk==b0
+R3
+w1500175590
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_core.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_core.v
+L0 14
+R1
+R2
+!s100 B]12ZTO58L]?VD>T9fhN50
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_core.v|
+!s108 1500436041.491000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_core.v|
+!s85 0
+!i10b 1
+vgame_core_tb
+V0ONKYKg1b52fAJgAXHzK`3
+r1
+31
+I1IEA<Ye1JbUcZVg@[2BWj1
+R3
+w1500436033
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_core_tb.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_core_tb.v
+L0 14
+R1
+R2
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_core_tb.v|
+!s100 ^46WM`lOO4;?6B221L8V12
+!s108 1500436041.676000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_core_tb.v|
+!s85 0
+!i10b 1
+vgame_init
+VCBX3eflO3UX@6b@4BdLz50
+r1
+31
+I[Z2^WEMJ4?mb]^cd498_=1
+R3
+w1499928490
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_init.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_init.v
+L0 14
+R1
+R2
+!s100 J_Ji19`^VnzbKH3YNBYAZ0
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_init.v|
+!s108 1500436042.123000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_init.v|
+!s85 0
+!i10b 1
+vgame_man_move
+Ve2Q?Q=`JiY`7f_W_Q@`Ih1
+r1
+31
+IABd5:16k?<iVlgOJlo_j[2
+R3
+w1499932176
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move.v
+L0 14
+R1
+R2
+!s100 Q:Kzd=DbVTdVDH:0?U>L31
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move.v|
+!s108 1500436042.276000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move.v|
+!s85 0
+!i10b 1
+vgame_man_move_tb
+I_eF?=8LNBm1ZATVMi9nVV3
+VUXV67eUT88MVo@1bVkC2D0
+R3
+w1499669066
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move_tb.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move_tb.v
+L0 15
+R1
+r1
+31
+R2
+!s100 L`<]ImSdU7DXXXkFW8=2a0
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move_tb.v|
+!s108 1500436042.438000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_man_move_tb.v|
+!i10b 1
+!s85 0
+vgame_mux_4
+VYTRO]_loa84c0AVEW7lag1
+r1
+31
+Im;8A287MkX=zBg9mNdIGg3
+R3
+w1499834584
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_mux_4.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_mux_4.v
+L0 14
+R1
+R2
+!s100 cbWE2J6KdJ?8da_;h0N171
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_mux_4.v|
+!s108 1500436042.593000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_mux_4.v|
+!s85 0
+!i10b 1
+vgame_retract
+Vi;:fKkbo^<J>j2ihok0J13
+r1
+31
+ITFO`8YhJK__e0hgR60KWY0
+R3
+w1499838492
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract.v
+L0 14
+R1
+R2
+!s100 n4158GmQkjdHPnjF6J7I`1
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract.v|
+!s108 1500436042.793000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract.v|
+!s85 0
+!i10b 1
+vgame_retract_tb
+IEVDOAc8o`c191eJ68969m3
+Vz`52_mZ[9XNY^9OdYMaf42
+R3
+w1500340237
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract_tb.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract_tb.v
+L0 14
+R1
+r1
+31
+R2
+!s100 X5TJILk9FPjd9W2gHVA8m1
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract_tb.v|
+!s108 1500436042.940000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_retract_tb.v|
+!i10b 1
+!s85 0
+vgame_stage_counter
+VAhRcz5cKkW[Ya]aK64F8<3
+r1
+31
+I`3C[872jMi<BeRKNUCUi23
+R3
+w1499654416
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_stage_counter.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_stage_counter.v
+L0 14
+R1
+R2
+!s100 >1P>5YR2;XKXD;VjMdSX22
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_stage_counter.v|
+!s108 1500436043.078000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_stage_counter.v|
+!s85 0
+!i10b 1
+vgame_step_counter
+VISR<4;]_bKn@SC50L_CbB0
+r1
+31
+IHla4Q6o]ZhZ1j`IFNHc?R1
+R3
+w1499917252
+8D:/Course/advanced-digital-system-design/allinone/src/game_core/game_step_counter.v
+FD:/Course/advanced-digital-system-design/allinone/src/game_core/game_step_counter.v
+L0 14
+R1
+R2
+!s100 AZPaXQU;2BYVV57o2VW983
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/game_core/game_step_counter.v|
+!s108 1500436043.293000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/game_core/game_step_counter.v|
+!s85 0
+!i10b 1
+vh_control
+VgcKIS9ohF9mddHPof]fGE1
+r1
+31
+IOF_MNeh1:<UcP;>JaOK?j2
+R3
+w1499844858
+8D:/Course/advanced-digital-system-design/allinone/src/svga/h_control.v
+FD:/Course/advanced-digital-system-design/allinone/src/svga/h_control.v
+L0 2
+R1
+R2
+!s100 Ai0DY]QW^>]nT_ZE2AGRO0
+!s108 1500344159.816000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/svga/h_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/svga/h_control.v|
+!s85 0
+!i10b 1
+vLFSR_Plus
+IkO;WcJ4mmMWHHabMCLMjk1
+VJ:H<ML2]5O6ekfHIXFeMP2
+R3
+w1500258088
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/LFSR_Plus.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/LFSR_Plus.v
+L0 33
+R1
+r1
+31
+R2
+n@l@f@s@r_@plus
+!s100 TfiVGE==Rf6^OZT^Of[;f2
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/LFSR_Plus.v|
+!s108 1500439262.869000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/LFSR_Plus.v|
+!i10b 1
+!s85 0
+vms_controller
+V0hYNoj>CX8>=:IQiNVzL<0
+r1
+31
+IobKhof[aXSgWPL]R<cDOP1
+R3
+w1500439219
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller.v
+L0 14
+R1
+R2
+!s85 0
+!s100 <8Q@<g^FE059@LSdQ9ozh2
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller.v|
+!s108 1500439263.000000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller.v|
+!i10b 1
+vms_controller_tb
+V;XY3za^31AF6A=2TS3j_J2
+r1
+31
+IHQC:DEoSGzl9LWCb:^1[d3
+R3
+w1500439250
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller_tb.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller_tb.v
+L0 1
+R1
+R2
+!s85 0
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller_tb.v|
+!s100 H@PRAPEVRmghe@PWAY?Ge0
+!s108 1500439263.188000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_controller_tb.v|
+!i10b 1
+vms_counter
+IdS<=Tn7lELlM2L3F56POW0
+V`3o=fWfJKHdG7G6Z]M2l93
+R3
+w1499959542
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_counter.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_counter.v
+L0 14
+R1
+r1
+31
+R2
+!s100 @<b;V^4R;alRNAPZdQ?<d2
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_counter.v|
+!s108 1500439263.385000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_counter.v|
+!i10b 1
+!s85 0
+vms_gen
+IS]Mj1DfD;TH:hoT=i@hgb0
+VHen;;OQgo6gngj8OHQg8V0
+R3
+w1500257560
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen.v
+L0 14
+R1
+r1
+31
+R2
+!s100 `<[G::C6AOMG_CC0@>5]52
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen.v|
+!s108 1500439263.617000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen.v|
+!i10b 1
+!s85 0
+vms_gen_lfsr_tb
+IaM<dRD1SUiek_;3BGEiDZ3
+V5aj7:z3n6^Yf0E]0Kil<W0
+R3
+w1500437368
+8D:\Course\advanced-digital-system-design\allinone\src\minesweeper\ms_gen_lfsr_tb.v
+FD:\Course\advanced-digital-system-design\allinone\src\minesweeper\ms_gen_lfsr_tb.v
+L0 14
+R1
+r1
+31
+R2
+!s100 >NJjZi?b3ezOHAaN[F4ZF0
+!s90 -reportprogress|300|-work|work|-vopt|D:\Course\advanced-digital-system-design\allinone\src\minesweeper\ms_gen_lfsr_tb.v|
+!s108 1500439263.786000
+!s107 D:\Course\advanced-digital-system-design\allinone\src\minesweeper\ms_gen_lfsr_tb.v|
+!i10b 1
+!s85 0
+vms_gen_tb
+IR_1Faz5dJHGoiozc5`azU3
+VWM>OcfWD5<ejZDBhKm^d=1
+R3
+w1499960270
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_tb.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_tb.v
+L0 14
+R1
+r1
+31
+R2
+!s100 6<[L9SeaOm[dB7kKT<Y250
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_tb.v|
+!s108 1500439263.955000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_gen_tb.v|
+!i10b 1
+!s85 0
+vms_round
+V?flEUOjXZn;N8FCh_ahU91
+r1
+31
+ImMho[a2X9:[Y4M_Qj4`oF1
+R3
+w1500191532
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round.v
+L0 14
+R1
+R2
+!s85 0
+!s100 TOLJV3J?l_I<@VzLX7K5Q2
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round.v|
+!s108 1500439264.121000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round.v|
+!i10b 1
+vms_round_check
+Vg1BUCN_I`b_oX?iMKjdCS2
+r1
+31
+IM1jUU@75KVMfGWmIgTaeD2
+R3
+w1499999266
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_check.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_check.v
+L0 14
+R1
+R2
+!s85 0
+!s100 1SR__4[6oScNIa340dLL=0
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_check.v|
+!s108 1500439264.301000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_check.v|
+!i10b 1
+vms_round_quick
+VIAf52ghO]8QIJS^?7^2B`0
+r1
+!s85 0
+31
+I3X203kOA41K09WAzLA6z40
+R3
+w1500174682
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_quick.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_quick.v
+L0 1
+R1
+R2
+!s100 E?UY1RaCflDcmQmb[Iig;2
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_quick.v|
+!s108 1500439264.554000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_quick.v|
+!i10b 1
+vms_round_tb
+IAi5O7>noZGmSW=@?TMIFL3
+Vk`KV]4LR?W2;mEcFe9K;f3
+R3
+w1500174720
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_tb.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_tb.v
+L0 14
+R1
+r1
+31
+R2
+!s100 0aR[SP_i=S91M<Y5V>Ag]0
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_tb.v|
+!s108 1500439264.754000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_round_tb.v|
+!i10b 1
+!s85 0
+vms_timer
+IQXzlYEFP7`c0QTzC^amh:2
+V1YDlgYh]60MzCEe=R2O[L0
+R3
+w1500126082
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_timer.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_timer.v
+L0 1
+R1
+r1
+31
+R2
+!s100 9XMS0VCX8d:GcA1?0b?zN3
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_timer.v|
+!s108 1500439264.872000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_timer.v|
+!i10b 1
+!s85 0
+vms_top
+I1BfH5KXd[PNb0WX]zGnXd1
+VFj:6?la:Y`=z4?T8;Q[Qf3
+R3
+w1500258312
+8D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_top.v
+FD:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_top.v
+L0 1
+R1
+r1
+31
+R2
+!s100 33R0Oa2Y7RCEg<gR7k@>j3
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_top.v|
+!i10b 1
+!s85 0
+!s108 1500439265.056000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/minesweeper/ms_top.v|
+vps2_mouse_interface_controller
+IUD;Bo2`IdK<Q6M>X`JhYU0
+VRKA0YZJ7a>g4BR;<SLK<W3
+R3
+w1499828926
+8D:/Course/advanced-digital-system-design/allinone/src/ps2_mouse/ps2_mouse_interface_controller.v
+FD:/Course/advanced-digital-system-design/allinone/src/ps2_mouse/ps2_mouse_interface_controller.v
+L0 21
+R1
+r1
+31
+R2
+!s100 2iXlcQVhm>gDAJQT0CG_Y0
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/ps2_mouse/ps2_mouse_interface_controller.v|
+!s108 1500344159.595000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/ps2_mouse/ps2_mouse_interface_controller.v|
+!i10b 1
+!s85 0
+vv_control
+I@:gO8L``4Rg5DDOK==9;@1
+VYGM>YJ@Nhd6K3o5DRJeh^0
+R3
+w1499844862
+8D:/Course/advanced-digital-system-design/allinone/src/svga/v_control.v
+FD:/Course/advanced-digital-system-design/allinone/src/svga/v_control.v
+L0 1
+R1
+r1
+31
+R2
+!s100 R^;57@5NgbR6fz1CJ9CBz3
+!s108 1500344159.991000
+!s107 D:/Course/advanced-digital-system-design/allinone/src/svga/v_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/Course/advanced-digital-system-design/allinone/src/svga/v_control.v|
+!i10b 1
+!s85 0

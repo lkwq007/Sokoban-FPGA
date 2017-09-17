@@ -1,0 +1,12 @@
+# Output products list for <wordROM>
+wordROM.asy
+wordROM.mif
+wordROM.ngc
+wordROM.sym
+wordROM.v
+wordROM.veo
+wordROM.vhd
+wordROM.vho
+wordROM.xco
+wordROM_flist.txt
+wordROM_xmdf.tcl

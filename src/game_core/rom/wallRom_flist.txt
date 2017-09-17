@@ -1,0 +1,12 @@
+# Output products list for <wallRom>
+wallRom.asy
+wallRom.mif
+wallRom.ngc
+wallRom.sym
+wallRom.v
+wallRom.veo
+wallRom.vhd
+wallRom.vho
+wallRom.xco
+wallRom_flist.txt
+wallRom_xmdf.tcl

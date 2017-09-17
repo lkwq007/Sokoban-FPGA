@@ -1,0 +1,11 @@
+library verilog;
+use verilog.vl_types.all;
+entity X_BUF is
+    generic(
+        LOC             : string  := "UNPLACED"
+    );
+    port(
+        O               : out    vl_logic;
+        I               : in     vl_logic
+    );
+end X_BUF;

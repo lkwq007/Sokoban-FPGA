@@ -1,0 +1,12 @@
+# Output products list for <manRomUp>
+manRomUp.asy
+manRomUp.mif
+manRomUp.ngc
+manRomUp.sym
+manRomUp.v
+manRomUp.veo
+manRomUp.vhd
+manRomUp.vho
+manRomUp.xco
+manRomUp_flist.txt
+manRomUp_xmdf.tcl

@@ -1,0 +1,580 @@
+iMPACT Version: 
+iMPACT log file Started on Mon Jul 17 10:22:21 2017
+
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver version: 1027 (1027).
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 150 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1027.
+File version of C:/Xilinx92i/data/xusbdfwu.hex = 1027.
+Firmware hex file version = 1027.
+CPLD file version = 0012h.
+CPLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc2vp30, Version : 1
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx92i/virtex2p/data/xc2vp30.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx92i/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx92i/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "C:/allinone/ise/top/sokoban.mcs"
+'1': Loading file 'C:/allinone/ise/top/sokoban.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file C:/allinone/ise/top/sokoban.cfi
+// *** BATCH CMD : setAttribute -position 1 -attr packageName -value "(null)"
+// *** BATCH CMD : setMode -bs
+1. Initializing V2Pro File...
+2. Initializing V2Pro File...
+// *** BATCH CMD : addDevice -p 3 -file "C:/allinone/ise/top/top.bit"
+'3': Loading file 'C:/allinone/ise/top/top.bit' ...
+done.
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the   bitstream stored in memory,
+   but the original bitstream file remains unchanged.
+INFO:iMPACT:501 - '3': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 4
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 3 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'3': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      5 sec.
+Updating config file C:/allinone/ise/top/top.bit...
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the   bitstream stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 3 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'3': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      6 sec.
+Updating config file C:/allinone/ise/top/top.bit...
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the   bitstream stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 3 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'3': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      5 sec.
+Updating config file C:/allinone/ise/top/top.bit...
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the   bitstream stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 3 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'3': Programming device...
+done.
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      6 sec.
+Updating config file C:/allinone/ise/top/top.bit...
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the   bitstream stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 3 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'3': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      5 sec.
+// *** BATCH CMD : Program -p 1 -e -parallel -defaultVersion 0 
+'1': Putting device in ISP mode...done.
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+Erasure completed successfully.
+'1': Putting device in ISP mode...done.
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+done.
+done.
+'1': Putting device in ISP mode...done.
+done.
+'1': Programming completed successfully.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =   1285 sec.
+Cable is not connected.
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver version: 1027 (1027).
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup ! Count ReleaseSemaphore rc = 298.
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver version: 1027 (1027).
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 150 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1027.
+File version of C:/Xilinx92i/data/xusbdfwu.hex = 1027.
+Firmware hex file version = 1027.
+CPLD file version = 0012h.
+CPLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+// *** BATCH CMD : Program -p 3 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'3': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      6 sec.
+The following values are set for this run of the wizard
+SUBMODE_TYPE is SUBMODE_PFFVERSION
+MULTIBOOT_DEVICE is DEVICE_NONE
+MULTIBOOT_TYPE is TYPE_NONE
+Downstream Daisy-Chain type is CHAINTYPE_NONE
+setMultiBootSelect is FALSE
+setSPISelect is FALSE
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice  -name "final" -path "C:\allinone\ise\top\"
+// *** BATCH CMD : setSubmode -pffversion
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : addDesign -version 0 -name "0000"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr autoSize -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr swapBit -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "FALSE"
+// *** BATCH CMD : addPromDevice -p 1 -size 0 -name xcf32p
+'1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: PFFView Wizard Data Report ------------------------
+SubMode: PFF_PFFVERSION
+MB Master Device: 
+MB Mode: 
+MB Chain: 
+getMultiBootSelected(): FALSE
+getSPISelected(): FALSE
+------------------------  GUI: End PFFView Report  ------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice -size 256 -name "final" -path"C:\allinone\ise\top\/"
+// *** BATCH CMD : setSubmode -pffversion
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiDevice -value ""
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpichainType -value""
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : addPromDevice -p 1 -size 0 -name xcf32p
+'1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffversion
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "0"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : addDesign -version 0 -name "0000"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setAttribute -design -attr RSPin -value ""
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+------------------------  GUI: Wizard Data Report  ---------------------------
+      PROM Mode : Revision
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : true
+      LoadDirection : UP
+      PROM Basename : final
+      File Location : C:\allinone\ise\top\/
+      Auto Selcet : false
+      Number of Data Stream : 1
+      Number of PROMs : 1
+      PROM Name : xcf32p		PROM Size : 4194304 Bytes
+------------------------------ END of Report ---------------------------------
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setAttribute -design -attr name -value "0"
+// *** BATCH CMD : addDevice -p 1 -file "C:/allinone/ise/top/top.bit"
+'1': Loading file 'C:/allinone/ise/top/top.bit' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+file : C:/allinone/ise/top/top.bit  used size : 11589920// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+INFO:iMPACT:2812 - ========== Revision | PROM | Block | Bits ==========
+INFO:iMPACT:2813 - Rev0: PROM0: block0 = 8388608 Bits
+INFO:iMPACT:2813 - Rev0: PROM0: block1 = 3201312 Bits
+INFO:iMPACT:2061 - ==============  Revision Summary  ================
+INFO:iMPACT - Rev0: 69.08% (11589920/16777216) full
+INFO:iMPACT - ===============================================
+Add one device.StartAddr=200000
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+Revision 0, Design 0, Device #0 is Selected.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffversion
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr path -value"C:\allinone\ise\top\/"
+// *** BATCH CMD : setAttribute -configdevice -attr name -value "final"
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+Total configuration bit size = 11589920 bits.
+Total configuration byte size = 1448740 bytes.
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : generate
+Swap bit can only be disabled in Hex file format only.
+0x200000 (2097152) bytes loaded up from 0x0
+Using user-specified prom size of 4096K
+Writing file "C:\allinone\ise\top\//final.mcs".
+Writing file "C:\allinone\ise\top\//final.prm".
+Writing file "C:\allinone\ise\top\//final.sig".
+Writing file "C:\allinone\ise\top\//final.cfi".
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : assignFile -p 1 -file "C:/allinone/ise/top/final.mcs"
+'1': Loading file 'C:/allinone/ise/top/final.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file C:/allinone/ise/top/final.cfi
+// *** BATCH CMD : setAttribute -position 1 -attr packageName -value "(null)"
+// *** BATCH CMD : assignFile -p 1 -file "C:/allinone/ise/top/final.mcs"
+'1': Loading file 'C:/allinone/ise/top/final.mcs' ...
+done.
+// *** BATCH CMD : setAttribute -position 1 -attr packageName -value "(null)"
+// *** BATCH CMD : assignFile -p 1 -file "C:/allinone/ise/top/final.mcs"
+'1': Loading file 'C:/allinone/ise/top/final.mcs' ...
+done.
+// *** BATCH CMD : setAttribute -position 1 -attr packageName -value "(null)"
+// *** BATCH CMD : Program -p 1 -e -parallel -defaultVersion 0 
+'1': Putting device in ISP mode...done.
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 15000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+Erasure completed successfully.
+'1': Putting device in ISP mode...done.
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+done.
+done.
+'1': Putting device in ISP mode...done.
+done.
+'1': Programming completed successfully.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =   1645 sec.
+Cable is not connected.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiDevice -value ""
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpichainType -value""
+------------------------  GUI: Wizard Data Report  ---------------------------
+      PROM Mode : Revision
+      Compression : false
+      Fill Value : 
+      Output Format : 
+      Swap Bits : false
+      LoadDirection : 
+      PROM Basename : 
+      File Location : 
+      Auto Selcet : false
+      Number of Data Stream : 0
+      Number of PROMs : 0
+------------------------------ END of Report ---------------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+FATAL_ERROR:GuiUtilities:Gq_Application.c:578:1.17 - This application has   discovered an exceptional condition from which it cannot recover.  Process   will terminate. For more information on this error, please consult the   Answers Database or open a WebCase with this project attached at   http://www.xilinx.com/support.

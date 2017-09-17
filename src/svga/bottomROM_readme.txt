@@ -1,0 +1,50 @@
+The following files were generated for 'bottomROM' in directory 
+E:\lab5\IPCore:
+
+bottomROM.asy:
+   Graphical symbol information file. Used by the ISE tools and some
+   third party tools to create a symbol representing the core.
+
+bottomROM.ngc:
+   Binary Xilinx implementation netlist file containing the information
+   required to implement the module in a Xilinx (R) FPGA.
+
+bottomROM.sym:
+   Please see the core data sheet.
+
+bottomROM.v:
+   Verilog wrapper file provided to support functional simulation.
+   This file contains simulation model customization data that is
+   passed to a parameterized simulation model for the core.
+
+bottomROM.veo:
+   VEO template file containing code that can be used as a model for
+   instantiating a CORE Generator module in a Verilog design.
+
+bottomROM.vhd:
+   VHDL wrapper file provided to support functional simulation. This
+   file contains simulation model customization data that is passed to
+   a parameterized simulation model for the core.
+
+bottomROM.vho:
+   VHO template file containing code that can be used as a model for
+   instantiating a CORE Generator module in a VHDL design.
+
+bottomROM.xco:
+   CORE Generator input file containing the parameters used to
+   regenerate a core.
+
+bottomROM_flist.txt:
+   Text file listing all of the output files produced when a customized
+   core was generated in the CORE Generator.
+
+bottomROM_readme.txt:
+   Text file indicating the files generated and how they are used.
+
+bottomROM_xmdf.tcl:
+   Please see the core data sheet.
+
+
+Please see the Xilinx CORE Generator online help for further details on
+generated files and how to use them.
+

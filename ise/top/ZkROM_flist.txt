@@ -1,0 +1,12 @@
+# Output products list for <ZkROM>
+ZkROM.asy
+ZkROM.mif
+ZkROM.ngc
+ZkROM.sym
+ZkROM.v
+ZkROM.veo
+ZkROM.vhd
+ZkROM.vho
+ZkROM.xco
+ZkROM_flist.txt
+ZkROM_xmdf.tcl

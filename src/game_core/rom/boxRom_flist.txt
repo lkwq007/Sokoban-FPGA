@@ -1,0 +1,12 @@
+# Output products list for <boxRom>
+boxRom.asy
+boxRom.mif
+boxRom.ngc
+boxRom.sym
+boxRom.v
+boxRom.veo
+boxRom.vhd
+boxRom.vho
+boxRom.xco
+boxRom_flist.txt
+boxRom_xmdf.tcl

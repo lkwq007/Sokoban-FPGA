@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="unknown" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="863" delta="unknown" >The following Virtex BUFG(s) is/are being retargeted to Virtex2 BUFGMUX(s) with input tied to I0 and Select pin tied to constant 0:
+<arg fmt="%s" index="1">BUFG symbol &quot;dcm_inst/CLK0_BUFG_INST&quot; (output signal=dcm_inst/CLK0_OUT),
+BUFG symbol &quot;dcm_inst/CLKDV_BUFG_INST&quot; (output signal=pixel_clk_OBUF),
+BUFG symbol &quot;keyboard/ps2_dcm_inst/CLKDV_OUT_BUFG&quot; (output signal=keyboard/ps2_dcm_inst/CLKDV_OUT)</arg>
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="unknown" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs in the schematic.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="unknown" >The function generator <arg fmt="%s" index="1">display_inst/layer_top_inst/en_level_cmp_le00011</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">display_inst/layer_top_inst/Blue3&lt;0&gt;329_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="unknown" >Gated clock. Clock net <arg fmt="%s" index="1">keyboard/ps2_interface_inst/counter_reset</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="unknown" >Gated clock. Clock net <arg fmt="%s" index="1">keyboard/ps2_interface_inst/ps2_interface_controller/state_cmp_eq0003</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+</messages>
+

@@ -1,0 +1,19 @@
+Release 9.2i - netgen J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -insert_glbl true -w -dir netgen/translate
+-ofmt verilog -sim top.ngd top_translate.v  
+
+Reading design 'top.ngd' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file
+'C:\allinone\ise\top\netgen\translate\top_translate.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 59952 kilobytes

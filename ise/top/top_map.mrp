@@ -1,0 +1,254 @@
+Release 9.2i Map J.36
+Xilinx Mapping Report File for Design 'top'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx92i\bin\nt\map.exe -ise
+C:/Sokoban/allinone/ise/top/top.ise -intstyle ise -p xc2vp30-ff896-7 -cm area
+-pr b -k 4 -c 100 -tx off -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc2vp30
+Target Package : ff896
+Target Speed   : -7
+Mapper Version : virtex2p -- $Revision: 1.36 $
+Mapped Date    : Sun Sep 17 20:23:54 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    3
+Logic Utilization:
+  Total Number Slice Registers:     1,086 out of  27,392    3%
+    Number used as Flip Flops:                 1,083
+    Number used as Latches:                        3
+  Number of 4 input LUTs:           5,973 out of  27,392   21%
+Logic Distribution:
+  Number of occupied Slices:        3,296 out of  13,696   24%
+  Number of Slices containing only related logic:   3,296 out of   3,296  100%
+  Number of Slices containing unrelated logic:          0 out of   3,296    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:          6,149 out of  27,392   22%
+  Number used as logic:             5,973
+  Number used as a route-thru:        176
+
+  Number of bonded IOBs:               35 out of     556    6%
+    IOB Flip Flops:                     3
+  Number of PPC405s:                   0 out of       2    0%
+  Number of Block RAMs:                68 out of     136   50%
+  Number of GCLKs:                      3 out of      16   18%
+  Number of DCMs:                       1 out of       8   12%
+  Number of GTs:                        0 out of       8    0%
+  Number of GT10s:                      0 out of       0    0%
+
+Total equivalent gate count for design:  4,512,600
+Additional JTAG gate count for IOBs:  1,680
+Peak Memory Usage:  239 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   10 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator
+   display_inst/layer_top_inst/en_level_cmp_le00011 failed to merge with F5
+   multiplexer display_inst/layer_top_inst/Blue3<0>329_f5.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   keyboard/ps2_interface_inst/counter_reset is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   keyboard/ps2_interface_inst/ps2_interface_controller/state_cmp_eq0003 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:863 - The following Virtex BUFG(s) is/are being retargeted to
+   Virtex2 BUFGMUX(s) with input tied to I0 and Select pin tied to constant 0:
+   BUFG symbol "dcm_inst/CLK0_BUFG_INST" (output signal=dcm_inst/CLK0_OUT),
+   BUFG symbol "dcm_inst/CLKDV_BUFG_INST" (output signal=pixel_clk_OBUF),
+   BUFG symbol "keyboard/ps2_dcm_inst/CLKDV_OUT_BUFG" (output
+   signal=keyboard/ps2_dcm_inst/CLKDV_OUT)
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs in the
+   schematic.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  15 block(s) removed
+  29 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+Unused block "display_inst/layer_bottom_inst/bottomROM/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_1_inst/box_dst_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_1_inst/box_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_1_inst/dst_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_1_inst/wall_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_1_inst/way_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_2_inst/man_inst_down/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_2_inst/man_inst_left/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_2_inst/man_inst_right/VCC" (ONE) removed.
+Unused block "display_inst/layer_mid_2_inst/man_inst_up/VCC" (ONE) removed.
+Unused block "display_inst/layer_mine/cell_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mine/doubt_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mine/flag_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mine/mine_open_inst/VCC" (ONE) removed.
+Unused block "display_inst/layer_mine/open_inst/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		display_inst/layer_bottom_inst/bottomROM/GND
+GND 		display_inst/layer_bottom_inst/letter_disp_level/ZkROM/GND
+VCC 		display_inst/layer_bottom_inst/letter_disp_level/ZkROM/VCC
+GND 		display_inst/layer_bottom_inst/letter_disp_next/ZkROM/GND
+VCC 		display_inst/layer_bottom_inst/letter_disp_next/ZkROM/VCC
+GND 		display_inst/layer_bottom_inst/letter_disp_retract/ZkROM/GND
+VCC 		display_inst/layer_bottom_inst/letter_disp_retract/ZkROM/VCC
+GND 		display_inst/layer_bottom_inst/letter_disp_retry/ZkROM/GND
+VCC 		display_inst/layer_bottom_inst/letter_disp_retry/ZkROM/VCC
+GND 		display_inst/layer_bottom_inst/number_disp_step/ZkROM/GND
+VCC 		display_inst/layer_bottom_inst/number_disp_step/ZkROM/VCC
+GND 		display_inst/layer_bottom_inst/word_disp_message/wordROM/GND
+VCC 		display_inst/layer_bottom_inst/word_disp_message/wordROM/VCC
+GND 		display_inst/layer_mid_1_inst/box_dst_inst/GND
+GND 		display_inst/layer_mid_1_inst/box_inst/GND
+GND 		display_inst/layer_mid_1_inst/dst_inst/GND
+GND 		display_inst/layer_mid_1_inst/wall_inst/GND
+GND 		display_inst/layer_mid_1_inst/way_inst/GND
+GND 		display_inst/layer_mid_2_inst/man_inst_down/GND
+GND 		display_inst/layer_mid_2_inst/man_inst_left/GND
+GND 		display_inst/layer_mid_2_inst/man_inst_right/GND
+GND 		display_inst/layer_mid_2_inst/man_inst_up/GND
+GND 		display_inst/layer_mine/cell_inst/GND
+GND 		display_inst/layer_mine/doubt_inst/GND
+GND 		display_inst/layer_mine/flag_inst/GND
+GND 		display_inst/layer_mine/mine_open_inst/GND
+GND 		display_inst/layer_mine/open_inst/GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| blue<0>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<1>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<2>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<3>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<4>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<5>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<6>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blue<7>                            | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| clk                                | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| green<0>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<1>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<2>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<3>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<4>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<5>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<6>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| green<7>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| hsync                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| pixel_clk                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| ps2_clk                            | IOB     | BIDIR     | LVCMOS25    | 12       | SLOW |          |          |       |
+| ps2_clk_key                        | IOB     | INPUT     | LVCMOS25    |          |      | INFF1    |          | IFD   |
+| ps2_data                           | IOB     | BIDIR     | LVCMOS25    | 12       | SLOW | INFF1    |          |       |
+| ps2_data_key                       | IOB     | INPUT     | LVCMOS25    |          |      | INFF1    |          | IFD   |
+| red<0>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<1>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<2>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<3>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<4>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<5>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<6>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| red<7>                             | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| reset_n                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| vga_blank_z                        | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| vga_comp_synch                     | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| vsync                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.

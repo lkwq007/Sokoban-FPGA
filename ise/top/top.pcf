@@ -1,0 +1,941 @@
+//! **************************************************************************
+// Written by: Map J.36 on Sun Sep 17 20:24:04 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "vga_comp_synch" LOCATE = SITE "G12" LEVEL 1;
+COMP "clk" LOCATE = SITE "AJ15" LEVEL 1;
+COMP "ps2_clk_key" LOCATE = SITE "AG2" LEVEL 1;
+COMP "ps2_data_key" LOCATE = SITE "AG1" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "D15" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "E15" LEVEL 1;
+COMP "blue<2>" LOCATE = SITE "H15" LEVEL 1;
+COMP "blue<3>" LOCATE = SITE "J15" LEVEL 1;
+COMP "blue<4>" LOCATE = SITE "C13" LEVEL 1;
+COMP "blue<5>" LOCATE = SITE "D13" LEVEL 1;
+COMP "blue<6>" LOCATE = SITE "D14" LEVEL 1;
+COMP "blue<7>" LOCATE = SITE "E14" LEVEL 1;
+COMP "ps2_clk" LOCATE = SITE "AD6" LEVEL 1;
+COMP "vga_blank_z" LOCATE = SITE "A8" LEVEL 1;
+COMP "hsync" LOCATE = SITE "B8" LEVEL 1;
+COMP "vsync" LOCATE = SITE "D11" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "AG5" LEVEL 1;
+COMP "pixel_clk" LOCATE = SITE "H12" LEVEL 1;
+COMP "ps2_data" LOCATE = SITE "AD5" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "G8" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "H9" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "G9" LEVEL 1;
+COMP "red<3>" LOCATE = SITE "F9" LEVEL 1;
+COMP "red<4>" LOCATE = SITE "F10" LEVEL 1;
+COMP "red<5>" LOCATE = SITE "D7" LEVEL 1;
+COMP "red<6>" LOCATE = SITE "C7" LEVEL 1;
+COMP "red<7>" LOCATE = SITE "H10" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "G10" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "E10" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "D10" LEVEL 1;
+COMP "green<3>" LOCATE = SITE "D8" LEVEL 1;
+COMP "green<4>" LOCATE = SITE "C8" LEVEL 1;
+COMP "green<5>" LOCATE = SITE "H11" LEVEL 1;
+COMP "green<6>" LOCATE = SITE "G11" LEVEL 1;
+COMP "green<7>" LOCATE = SITE "E11" LEVEL 1;
+TIMEGRP dcm_inst_CLKDV_BUF = BEL "vga_ctrl/v_control/state_FFd2" BEL
+        "vga_ctrl/v_control/state_FFd1" BEL "switcher/state_FFd1" BEL
+        "mouse/bit_counter_p/q_0" BEL "mouse/bit_counter_p/q_1" BEL
+        "mouse/bit_counter_p/q_2" BEL "mouse/bit_counter_p/q_3" BEL
+        "mouse/bit_counter_p/q_4" BEL "mouse/bit_counter_p/q_5" BEL
+        "mouse/bit_counter_p/q_6" BEL "mouse/watchdog/q_0" BEL
+        "mouse/watchdog/q_1" BEL "mouse/watchdog/q_2" BEL "mouse/watchdog/q_3"
+        BEL "mouse/watchdog/q_4" BEL "mouse/watchdog/q_5" BEL
+        "mouse/watchdog/q_6" BEL "mouse/watchdog/q_7" BEL "mouse/watchdog/q_8"
+        BEL "mouse/watchdog/q_9" BEL "mouse/watchdog/q_10" BEL
+        "mouse/watchdog/q_11" BEL "mouse/watchdog/q_12" BEL
+        "mouse/watchdog/q_13" BEL "mouse/watchdog/q_14" BEL
+        "mouse/watchdog/q_15" BEL "vga_ctrl/y_pos_counter/state_0" BEL
+        "vga_ctrl/y_pos_counter/state_1" BEL "vga_ctrl/y_pos_counter/state_2"
+        BEL "vga_ctrl/y_pos_counter/state_3" BEL
+        "vga_ctrl/y_pos_counter/state_4" BEL "vga_ctrl/y_pos_counter/state_5"
+        BEL "vga_ctrl/y_pos_counter/state_6" BEL
+        "vga_ctrl/y_pos_counter/state_7" BEL "vga_ctrl/y_pos_counter/state_8"
+        BEL "vga_ctrl/y_pos_counter/state_9" BEL
+        "vga_ctrl/x_pos_counter/state_0" BEL "vga_ctrl/x_pos_counter/state_1"
+        BEL "vga_ctrl/x_pos_counter/state_2" BEL
+        "vga_ctrl/x_pos_counter/state_3" BEL "vga_ctrl/x_pos_counter/state_4"
+        BEL "vga_ctrl/x_pos_counter/state_5" BEL
+        "vga_ctrl/x_pos_counter/state_6" BEL "vga_ctrl/x_pos_counter/state_7"
+        BEL "vga_ctrl/x_pos_counter/state_8" BEL
+        "vga_ctrl/x_pos_counter/state_9" BEL "vga_ctrl/x_pos_counter/state_10"
+        BEL "mouse/controller/state_FFd9" BEL "mouse/controller/state_FFd8"
+        BEL "mouse/controller/state_FFd5" BEL "mouse/controller/state_FFd2"
+        BEL "mouse/controller/state_FFd3" BEL "mouse/shiftreg/q_32" BEL
+        "mouse/shiftreg/q_31" BEL "mouse/shiftreg/q_30" BEL
+        "mouse/shiftreg/q_29" BEL "mouse/shiftreg/q_28" BEL
+        "mouse/shiftreg/q_27" BEL "mouse/shiftreg/q_26" BEL
+        "mouse/shiftreg/q_25" BEL "mouse/shiftreg/q_24" BEL
+        "mouse/shiftreg/q_23" BEL "mouse/shiftreg/q_22" BEL
+        "mouse/shiftreg/q_21" BEL "mouse/shiftreg/q_20" BEL
+        "mouse/shiftreg/q_19" BEL "mouse/shiftreg/q_18" BEL
+        "mouse/shiftreg/q_17" BEL "mouse/shiftreg/q_16" BEL
+        "mouse/shiftreg/q_15" BEL "mouse/shiftreg/q_14" BEL
+        "mouse/shiftreg/q_13" BEL "mouse/shiftreg/q_12" BEL
+        "mouse/shiftreg/q_11" BEL "mouse/shiftreg/q_10" BEL
+        "mouse/shiftreg/q_9" BEL "mouse/shiftreg/q_8" BEL "mouse/shiftreg/q_7"
+        BEL "mouse/shiftreg/q_6" BEL "mouse/shiftreg/q_5" BEL
+        "mouse/shiftreg/q_4" BEL "mouse/shiftreg/q_3" BEL "mouse/shiftreg/q_2"
+        BEL "mouse/shiftreg/q_1" BEL "mouse/shiftreg/q_0" BEL
+        "mouse/ps2_data_programme/retry" BEL
+        "mouse/ps2_data_programme/retract" BEL
+        "mouse/ps2_data_programme/cursor_5" BEL
+        "mouse/ps2_data_programme/cursor_4" BEL
+        "mouse/ps2_data_programme/cursor_3" BEL
+        "mouse/ps2_data_programme/cursor_2" BEL
+        "mouse/ps2_data_programme/cursor_1" BEL
+        "mouse/ps2_data_programme/cursor_0" BEL
+        "mouse/ps2_data_programme/GameArea" BEL
+        "mouse/ps2_data_programme/right" BEL "mouse/ps2_data_programme/left"
+        BEL "mouse/ps2_data_programme/ArrowPosY_9" BEL
+        "mouse/ps2_data_programme/ArrowPosY_8" BEL
+        "mouse/ps2_data_programme/ArrowPosY_7" BEL
+        "mouse/ps2_data_programme/ArrowPosY_6" BEL
+        "mouse/ps2_data_programme/ArrowPosY_5" BEL
+        "mouse/ps2_data_programme/ArrowPosY_4" BEL
+        "mouse/ps2_data_programme/ArrowPosY_3" BEL
+        "mouse/ps2_data_programme/ArrowPosY_2" BEL
+        "mouse/ps2_data_programme/ArrowPosY_1" BEL
+        "mouse/ps2_data_programme/ArrowPosY_0" BEL
+        "mouse/ps2_data_programme/ArrowPosX_9" BEL
+        "mouse/ps2_data_programme/ArrowPosX_8" BEL
+        "mouse/ps2_data_programme/ArrowPosX_7" BEL
+        "mouse/ps2_data_programme/ArrowPosX_6" BEL
+        "mouse/ps2_data_programme/ArrowPosX_5" BEL
+        "mouse/ps2_data_programme/ArrowPosX_4" BEL
+        "mouse/ps2_data_programme/ArrowPosX_3" BEL
+        "mouse/ps2_data_programme/ArrowPosX_2" BEL
+        "mouse/ps2_data_programme/ArrowPosX_1" BEL
+        "mouse/ps2_data_programme/ArrowPosX_0" BEL
+        "minesweeper/ms_game/open_1" BEL "minesweeper/ms_game/open_2" BEL
+        "minesweeper/ms_game/open_0" BEL "minesweeper/ms_game/open_4" BEL
+        "minesweeper/ms_game/open_5" BEL "minesweeper/ms_game/open_3" BEL
+        "minesweeper/ms_game/open_7" BEL "minesweeper/ms_game/open_8" BEL
+        "minesweeper/ms_game/open_6" BEL "minesweeper/ms_game/open_10" BEL
+        "minesweeper/ms_game/open_11" BEL "minesweeper/ms_game/open_9" BEL
+        "minesweeper/ms_game/open_13" BEL "minesweeper/ms_game/open_14" BEL
+        "minesweeper/ms_game/open_12" BEL "minesweeper/ms_game/open_16" BEL
+        "minesweeper/ms_game/open_17" BEL "minesweeper/ms_game/open_15" BEL
+        "minesweeper/ms_game/open_19" BEL "minesweeper/ms_game/open_20" BEL
+        "minesweeper/ms_game/open_18" BEL "minesweeper/ms_game/open_22" BEL
+        "minesweeper/ms_game/open_23" BEL "minesweeper/ms_game/open_21" BEL
+        "minesweeper/ms_game/open_25" BEL "minesweeper/ms_game/open_26" BEL
+        "minesweeper/ms_game/open_24" BEL "minesweeper/ms_game/open_28" BEL
+        "minesweeper/ms_game/open_29" BEL "minesweeper/ms_game/open_27" BEL
+        "minesweeper/ms_game/open_31" BEL "minesweeper/ms_game/open_32" BEL
+        "minesweeper/ms_game/open_30" BEL "minesweeper/ms_game/open_34" BEL
+        "minesweeper/ms_game/open_35" BEL "minesweeper/ms_game/open_33" BEL
+        "minesweeper/ms_game/open_37" BEL "minesweeper/ms_game/open_38" BEL
+        "minesweeper/ms_game/open_36" BEL "minesweeper/ms_game/open_39" BEL
+        "minesweeper/ms_game/open_40" BEL "minesweeper/ms_game/open_41" BEL
+        "minesweeper/ms_game/open_42" BEL "minesweeper/ms_game/open_44" BEL
+        "minesweeper/ms_game/open_45" BEL "minesweeper/ms_game/open_43" BEL
+        "minesweeper/ms_game/open_47" BEL "minesweeper/ms_game/open_48" BEL
+        "minesweeper/ms_game/open_46" BEL "minesweeper/ms_game/open_50" BEL
+        "minesweeper/ms_game/open_51" BEL "minesweeper/ms_game/open_49" BEL
+        "minesweeper/ms_game/open_53" BEL "minesweeper/ms_game/open_54" BEL
+        "minesweeper/ms_game/open_52" BEL "minesweeper/ms_game/open_56" BEL
+        "minesweeper/ms_game/open_57" BEL "minesweeper/ms_game/open_55" BEL
+        "minesweeper/ms_game/open_59" BEL "minesweeper/ms_game/open_60" BEL
+        "minesweeper/ms_game/open_58" BEL "minesweeper/ms_game/open_62" BEL
+        "minesweeper/ms_game/open_63" BEL "minesweeper/ms_game/open_61" BEL
+        "minesweeper/ms_game/doubt_0" BEL "minesweeper/ms_game/doubt_1" BEL
+        "minesweeper/ms_game/doubt_2" BEL "minesweeper/ms_game/doubt_3" BEL
+        "minesweeper/ms_game/doubt_5" BEL "minesweeper/ms_game/doubt_6" BEL
+        "minesweeper/ms_game/doubt_4" BEL "minesweeper/ms_game/doubt_8" BEL
+        "minesweeper/ms_game/doubt_9" BEL "minesweeper/ms_game/doubt_7" BEL
+        "minesweeper/ms_game/doubt_11" BEL "minesweeper/ms_game/doubt_12" BEL
+        "minesweeper/ms_game/doubt_10" BEL "minesweeper/ms_game/doubt_14" BEL
+        "minesweeper/ms_game/doubt_15" BEL "minesweeper/ms_game/doubt_13" BEL
+        "minesweeper/ms_game/doubt_17" BEL "minesweeper/ms_game/doubt_18" BEL
+        "minesweeper/ms_game/doubt_16" BEL "minesweeper/ms_game/doubt_20" BEL
+        "minesweeper/ms_game/doubt_21" BEL "minesweeper/ms_game/doubt_19" BEL
+        "minesweeper/ms_game/doubt_23" BEL "minesweeper/ms_game/doubt_24" BEL
+        "minesweeper/ms_game/doubt_22" BEL "minesweeper/ms_game/doubt_25" BEL
+        "minesweeper/ms_game/doubt_26" BEL "minesweeper/ms_game/doubt_27" BEL
+        "minesweeper/ms_game/doubt_28" BEL "minesweeper/ms_game/doubt_30" BEL
+        "minesweeper/ms_game/doubt_31" BEL "minesweeper/ms_game/doubt_29" BEL
+        "minesweeper/ms_game/doubt_33" BEL "minesweeper/ms_game/doubt_34" BEL
+        "minesweeper/ms_game/doubt_32" BEL "minesweeper/ms_game/doubt_36" BEL
+        "minesweeper/ms_game/doubt_37" BEL "minesweeper/ms_game/doubt_35" BEL
+        "minesweeper/ms_game/doubt_39" BEL "minesweeper/ms_game/doubt_40" BEL
+        "minesweeper/ms_game/doubt_38" BEL "minesweeper/ms_game/doubt_42" BEL
+        "minesweeper/ms_game/doubt_43" BEL "minesweeper/ms_game/doubt_41" BEL
+        "minesweeper/ms_game/doubt_45" BEL "minesweeper/ms_game/doubt_46" BEL
+        "minesweeper/ms_game/doubt_44" BEL "minesweeper/ms_game/doubt_48" BEL
+        "minesweeper/ms_game/doubt_49" BEL "minesweeper/ms_game/doubt_47" BEL
+        "minesweeper/ms_game/doubt_50" BEL "minesweeper/ms_game/doubt_51" BEL
+        "minesweeper/ms_game/doubt_52" BEL "minesweeper/ms_game/doubt_53" BEL
+        "minesweeper/ms_game/doubt_55" BEL "minesweeper/ms_game/doubt_56" BEL
+        "minesweeper/ms_game/doubt_54" BEL "minesweeper/ms_game/doubt_58" BEL
+        "minesweeper/ms_game/doubt_59" BEL "minesweeper/ms_game/doubt_57" BEL
+        "minesweeper/ms_game/doubt_61" BEL "minesweeper/ms_game/doubt_62" BEL
+        "minesweeper/ms_game/doubt_60" BEL "minesweeper/ms_game/flag_0" BEL
+        "minesweeper/ms_game/flag_1" BEL "minesweeper/ms_game/doubt_63" BEL
+        "minesweeper/ms_game/flag_3" BEL "minesweeper/ms_game/flag_4" BEL
+        "minesweeper/ms_game/flag_2" BEL "minesweeper/ms_game/flag_6" BEL
+        "minesweeper/ms_game/flag_7" BEL "minesweeper/ms_game/flag_5" BEL
+        "minesweeper/ms_game/flag_9" BEL "minesweeper/ms_game/flag_10" BEL
+        "minesweeper/ms_game/flag_8" BEL "minesweeper/ms_game/flag_11" BEL
+        "minesweeper/ms_game/flag_12" BEL "minesweeper/ms_game/flag_13" BEL
+        "minesweeper/ms_game/flag_14" BEL "minesweeper/ms_game/flag_16" BEL
+        "minesweeper/ms_game/flag_17" BEL "minesweeper/ms_game/flag_15" BEL
+        "minesweeper/ms_game/flag_19" BEL "minesweeper/ms_game/flag_20" BEL
+        "minesweeper/ms_game/flag_18" BEL "minesweeper/ms_game/flag_22" BEL
+        "minesweeper/ms_game/flag_23" BEL "minesweeper/ms_game/flag_21" BEL
+        "minesweeper/ms_game/flag_25" BEL "minesweeper/ms_game/flag_26" BEL
+        "minesweeper/ms_game/flag_24" BEL "minesweeper/ms_game/flag_28" BEL
+        "minesweeper/ms_game/flag_29" BEL "minesweeper/ms_game/flag_27" BEL
+        "minesweeper/ms_game/flag_31" BEL "minesweeper/ms_game/flag_32" BEL
+        "minesweeper/ms_game/flag_30" BEL "minesweeper/ms_game/flag_34" BEL
+        "minesweeper/ms_game/flag_35" BEL "minesweeper/ms_game/flag_33" BEL
+        "minesweeper/ms_game/flag_36" BEL "minesweeper/ms_game/flag_37" BEL
+        "minesweeper/ms_game/flag_38" BEL "minesweeper/ms_game/flag_39" BEL
+        "minesweeper/ms_game/flag_41" BEL "minesweeper/ms_game/flag_42" BEL
+        "minesweeper/ms_game/flag_40" BEL "minesweeper/ms_game/flag_44" BEL
+        "minesweeper/ms_game/flag_45" BEL "minesweeper/ms_game/flag_43" BEL
+        "minesweeper/ms_game/flag_47" BEL "minesweeper/ms_game/flag_48" BEL
+        "minesweeper/ms_game/flag_46" BEL "minesweeper/ms_game/flag_50" BEL
+        "minesweeper/ms_game/flag_51" BEL "minesweeper/ms_game/flag_49" BEL
+        "minesweeper/ms_game/flag_53" BEL "minesweeper/ms_game/flag_54" BEL
+        "minesweeper/ms_game/flag_52" BEL "minesweeper/ms_game/flag_56" BEL
+        "minesweeper/ms_game/flag_57" BEL "minesweeper/ms_game/flag_55" BEL
+        "minesweeper/ms_game/flag_59" BEL "minesweeper/ms_game/flag_60" BEL
+        "minesweeper/ms_game/flag_58" BEL "minesweeper/ms_game/flag_61" BEL
+        "minesweeper/ms_game/flag_62" BEL "minesweeper/ms_game/flag_63" BEL
+        "minesweeper/random/u_noise_out_5" BEL
+        "minesweeper/random/u_noise_out_4" BEL
+        "minesweeper/random/u_noise_out_3" BEL
+        "minesweeper/random/u_noise_out_2" BEL
+        "minesweeper/random/u_noise_out_1" BEL
+        "minesweeper/random/u_noise_out_0" BEL "minesweeper/random/rand_out_5"
+        BEL "minesweeper/random/rand_out_4" BEL
+        "minesweeper/random/rand_out_3" BEL "minesweeper/random/rand_out_2"
+        BEL "minesweeper/random/rand_out_1" BEL
+        "minesweeper/random/rand_out_0" BEL "minesweeper/gen/mine_counter/q_3"
+        BEL "minesweeper/gen/mine_counter/q_2" BEL
+        "minesweeper/gen/mine_counter/q_1" BEL
+        "minesweeper/gen/mine_counter/q_0" BEL "minesweeper/gen/state_FFd1"
+        BEL "minesweeper/gen/state_FFd2" BEL "minesweeper/gen/mine_0" BEL
+        "minesweeper/gen/mine_1" BEL "minesweeper/gen/mine_2" BEL
+        "minesweeper/gen/mine_3" BEL "minesweeper/gen/mine_4" BEL
+        "minesweeper/gen/mine_5" BEL "minesweeper/gen/mine_6" BEL
+        "minesweeper/gen/mine_7" BEL "minesweeper/gen/mine_8" BEL
+        "minesweeper/gen/mine_9" BEL "minesweeper/gen/mine_10" BEL
+        "minesweeper/gen/mine_11" BEL "minesweeper/gen/mine_13" BEL
+        "minesweeper/gen/mine_14" BEL "minesweeper/gen/mine_12" BEL
+        "minesweeper/gen/mine_15" BEL "minesweeper/gen/mine_16" BEL
+        "minesweeper/gen/mine_17" BEL "minesweeper/gen/mine_18" BEL
+        "minesweeper/gen/mine_19" BEL "minesweeper/gen/mine_20" BEL
+        "minesweeper/gen/mine_21" BEL "minesweeper/gen/mine_22" BEL
+        "minesweeper/gen/mine_23" BEL "minesweeper/gen/mine_24" BEL
+        "minesweeper/gen/mine_25" BEL "minesweeper/gen/mine_26" BEL
+        "minesweeper/gen/mine_27" BEL "minesweeper/gen/mine_28" BEL
+        "minesweeper/gen/mine_30" BEL "minesweeper/gen/mine_31" BEL
+        "minesweeper/gen/mine_29" BEL "minesweeper/gen/mine_32" BEL
+        "minesweeper/gen/mine_33" BEL "minesweeper/gen/mine_34" BEL
+        "minesweeper/gen/mine_35" BEL "minesweeper/gen/mine_36" BEL
+        "minesweeper/gen/mine_37" BEL "minesweeper/gen/mine_38" BEL
+        "minesweeper/gen/mine_39" BEL "minesweeper/gen/mine_40" BEL
+        "minesweeper/gen/mine_41" BEL "minesweeper/gen/mine_42" BEL
+        "minesweeper/gen/mine_43" BEL "minesweeper/gen/mine_44" BEL
+        "minesweeper/gen/mine_45" BEL "minesweeper/gen/mine_47" BEL
+        "minesweeper/gen/mine_48" BEL "minesweeper/gen/mine_46" BEL
+        "minesweeper/gen/mine_49" BEL "minesweeper/gen/mine_50" BEL
+        "minesweeper/gen/mine_51" BEL "minesweeper/gen/mine_52" BEL
+        "minesweeper/gen/mine_53" BEL "minesweeper/gen/mine_54" BEL
+        "minesweeper/gen/mine_55" BEL "minesweeper/gen/mine_56" BEL
+        "minesweeper/gen/mine_57" BEL "minesweeper/gen/mine_58" BEL
+        "minesweeper/gen/mine_59" BEL "minesweeper/gen/mine_60" BEL
+        "minesweeper/gen/mine_61" BEL "minesweeper/gen/mine_62" BEL
+        "minesweeper/gen/mine_63" BEL "sokoban/retracter/state_latest_3/q_0"
+        BEL "sokoban/retracter/state_latest_3/q_1" BEL
+        "sokoban/retracter/state_latest_3/q_2" BEL
+        "sokoban/retracter/state_latest_3/q_3" BEL
+        "sokoban/retracter/state_latest_3/q_4" BEL
+        "sokoban/retracter/state_latest_3/q_5" BEL
+        "sokoban/retracter/state_latest_3/q_6" BEL
+        "sokoban/retracter/state_latest_3/q_7" BEL
+        "sokoban/retracter/state_latest_3/q_8" BEL
+        "sokoban/retracter/state_latest_3/q_9" BEL
+        "sokoban/retracter/state_latest_3/q_10" BEL
+        "sokoban/retracter/state_latest_3/q_11" BEL
+        "sokoban/retracter/state_latest_3/q_12" BEL
+        "sokoban/retracter/state_latest_3/q_13" BEL
+        "sokoban/retracter/state_latest_3/q_14" BEL
+        "sokoban/retracter/state_latest_3/q_15" BEL
+        "sokoban/retracter/state_latest_3/q_16" BEL
+        "sokoban/retracter/state_latest_3/q_17" BEL
+        "sokoban/retracter/state_latest_3/q_18" BEL
+        "sokoban/retracter/state_latest_3/q_19" BEL
+        "sokoban/retracter/state_latest_3/q_20" BEL
+        "sokoban/retracter/state_latest_3/q_21" BEL
+        "sokoban/retracter/state_latest_3/q_22" BEL
+        "sokoban/retracter/state_latest_3/q_23" BEL
+        "sokoban/retracter/state_latest_3/q_24" BEL
+        "sokoban/retracter/state_latest_3/q_25" BEL
+        "sokoban/retracter/state_latest_3/q_26" BEL
+        "sokoban/retracter/state_latest_3/q_27" BEL
+        "sokoban/retracter/state_latest_3/q_28" BEL
+        "sokoban/retracter/state_latest_3/q_29" BEL
+        "sokoban/retracter/state_latest_3/q_30" BEL
+        "sokoban/retracter/state_latest_3/q_31" BEL
+        "sokoban/retracter/state_latest_3/q_32" BEL
+        "sokoban/retracter/state_latest_3/q_33" BEL
+        "sokoban/retracter/state_latest_3/q_34" BEL
+        "sokoban/retracter/state_latest_3/q_35" BEL
+        "sokoban/retracter/state_latest_3/q_36" BEL
+        "sokoban/retracter/state_latest_3/q_37" BEL
+        "sokoban/retracter/state_latest_3/q_38" BEL
+        "sokoban/retracter/state_latest_3/q_39" BEL
+        "sokoban/retracter/state_latest_3/q_40" BEL
+        "sokoban/retracter/state_latest_3/q_41" BEL
+        "sokoban/retracter/state_latest_3/q_42" BEL
+        "sokoban/retracter/state_latest_3/q_43" BEL
+        "sokoban/retracter/state_latest_3/q_44" BEL
+        "sokoban/retracter/state_latest_3/q_45" BEL
+        "sokoban/retracter/state_latest_3/q_46" BEL
+        "sokoban/retracter/state_latest_3/q_47" BEL
+        "sokoban/retracter/state_latest_3/q_48" BEL
+        "sokoban/retracter/state_latest_3/q_49" BEL
+        "sokoban/retracter/state_latest_3/q_50" BEL
+        "sokoban/retracter/state_latest_3/q_51" BEL
+        "sokoban/retracter/state_latest_3/q_52" BEL
+        "sokoban/retracter/state_latest_3/q_53" BEL
+        "sokoban/retracter/state_latest_3/q_54" BEL
+        "sokoban/retracter/state_latest_3/q_55" BEL
+        "sokoban/retracter/state_latest_3/q_56" BEL
+        "sokoban/retracter/state_latest_3/q_57" BEL
+        "sokoban/retracter/state_latest_3/q_58" BEL
+        "sokoban/retracter/state_latest_3/q_59" BEL
+        "sokoban/retracter/state_latest_3/q_60" BEL
+        "sokoban/retracter/state_latest_3/q_61" BEL
+        "sokoban/retracter/state_latest_3/q_62" BEL
+        "sokoban/retracter/state_latest_3/q_63" BEL
+        "sokoban/retracter/state_latest_3/q_64" BEL
+        "sokoban/retracter/state_latest_3/q_65" BEL
+        "sokoban/retracter/state_latest_3/q_66" BEL
+        "sokoban/retracter/state_latest_3/q_67" BEL
+        "sokoban/retracter/state_latest_3/q_68" BEL
+        "sokoban/retracter/state_latest_3/q_69" BEL
+        "sokoban/retracter/state_latest_3/q_70" BEL
+        "sokoban/retracter/state_latest_3/q_71" BEL
+        "sokoban/retracter/state_latest_3/q_72" BEL
+        "sokoban/retracter/state_latest_3/q_73" BEL
+        "sokoban/retracter/state_latest_3/q_74" BEL
+        "sokoban/retracter/state_latest_3/q_75" BEL
+        "sokoban/retracter/state_latest_3/q_76" BEL
+        "sokoban/retracter/state_latest_3/q_77" BEL
+        "sokoban/retracter/state_latest_3/q_78" BEL
+        "sokoban/retracter/state_latest_3/q_79" BEL
+        "sokoban/retracter/state_latest_3/q_80" BEL
+        "sokoban/retracter/state_latest_3/q_81" BEL
+        "sokoban/retracter/state_latest_3/q_82" BEL
+        "sokoban/retracter/state_latest_3/q_83" BEL
+        "sokoban/retracter/state_latest_3/q_84" BEL
+        "sokoban/retracter/state_latest_3/q_85" BEL
+        "sokoban/retracter/state_latest_3/q_86" BEL
+        "sokoban/retracter/state_latest_3/q_87" BEL
+        "sokoban/retracter/state_latest_3/q_88" BEL
+        "sokoban/retracter/state_latest_3/q_89" BEL
+        "sokoban/retracter/state_latest_3/q_90" BEL
+        "sokoban/retracter/state_latest_3/q_91" BEL
+        "sokoban/retracter/state_latest_3/q_92" BEL
+        "sokoban/retracter/state_latest_3/q_93" BEL
+        "sokoban/retracter/state_latest_3/q_94" BEL
+        "sokoban/retracter/state_latest_3/q_95" BEL
+        "sokoban/retracter/state_latest_3/q_96" BEL
+        "sokoban/retracter/state_latest_3/q_97" BEL
+        "sokoban/retracter/state_latest_3/q_98" BEL
+        "sokoban/retracter/state_latest_3/q_99" BEL
+        "sokoban/retracter/state_latest_3/q_100" BEL
+        "sokoban/retracter/state_latest_3/q_101" BEL
+        "sokoban/retracter/state_latest_3/q_102" BEL
+        "sokoban/retracter/state_latest_3/q_103" BEL
+        "sokoban/retracter/state_latest_3/q_104" BEL
+        "sokoban/retracter/state_latest_3/q_105" BEL
+        "sokoban/retracter/state_latest_3/q_106" BEL
+        "sokoban/retracter/state_latest_3/q_107" BEL
+        "sokoban/retracter/state_latest_3/q_108" BEL
+        "sokoban/retracter/state_latest_3/q_109" BEL
+        "sokoban/retracter/state_latest_3/q_110" BEL
+        "sokoban/retracter/state_latest_3/q_111" BEL
+        "sokoban/retracter/state_latest_3/q_112" BEL
+        "sokoban/retracter/state_latest_3/q_113" BEL
+        "sokoban/retracter/state_latest_3/q_114" BEL
+        "sokoban/retracter/state_latest_3/q_115" BEL
+        "sokoban/retracter/state_latest_3/q_116" BEL
+        "sokoban/retracter/state_latest_3/q_117" BEL
+        "sokoban/retracter/state_latest_3/q_118" BEL
+        "sokoban/retracter/state_latest_3/q_119" BEL
+        "sokoban/retracter/state_latest_3/q_120" BEL
+        "sokoban/retracter/state_latest_3/q_121" BEL
+        "sokoban/retracter/state_latest_3/q_122" BEL
+        "sokoban/retracter/state_latest_3/q_123" BEL
+        "sokoban/retracter/state_latest_3/q_124" BEL
+        "sokoban/retracter/state_latest_3/q_125" BEL
+        "sokoban/retracter/state_latest_3/q_126" BEL
+        "sokoban/retracter/state_latest_3/q_127" BEL
+        "sokoban/retracter/state_latest_3/q_128" BEL
+        "sokoban/retracter/state_latest_3/q_129" BEL
+        "sokoban/retracter/state_latest_3/q_130" BEL
+        "sokoban/retracter/state_latest_3/q_131" BEL
+        "sokoban/retracter/state_latest_3/q_132" BEL
+        "sokoban/retracter/state_latest_3/q_133" BEL
+        "sokoban/retracter/state_latest_2/q_0" BEL
+        "sokoban/retracter/state_latest_2/q_1" BEL
+        "sokoban/retracter/state_latest_2/q_2" BEL
+        "sokoban/retracter/state_latest_2/q_3" BEL
+        "sokoban/retracter/state_latest_2/q_4" BEL
+        "sokoban/retracter/state_latest_2/q_5" BEL
+        "sokoban/retracter/state_latest_2/q_6" BEL
+        "sokoban/retracter/state_latest_2/q_7" BEL
+        "sokoban/retracter/state_latest_2/q_8" BEL
+        "sokoban/retracter/state_latest_2/q_9" BEL
+        "sokoban/retracter/state_latest_2/q_10" BEL
+        "sokoban/retracter/state_latest_2/q_11" BEL
+        "sokoban/retracter/state_latest_2/q_12" BEL
+        "sokoban/retracter/state_latest_2/q_13" BEL
+        "sokoban/retracter/state_latest_2/q_14" BEL
+        "sokoban/retracter/state_latest_2/q_15" BEL
+        "sokoban/retracter/state_latest_2/q_16" BEL
+        "sokoban/retracter/state_latest_2/q_17" BEL
+        "sokoban/retracter/state_latest_2/q_18" BEL
+        "sokoban/retracter/state_latest_2/q_19" BEL
+        "sokoban/retracter/state_latest_2/q_20" BEL
+        "sokoban/retracter/state_latest_2/q_21" BEL
+        "sokoban/retracter/state_latest_2/q_22" BEL
+        "sokoban/retracter/state_latest_2/q_23" BEL
+        "sokoban/retracter/state_latest_2/q_24" BEL
+        "sokoban/retracter/state_latest_2/q_25" BEL
+        "sokoban/retracter/state_latest_2/q_26" BEL
+        "sokoban/retracter/state_latest_2/q_27" BEL
+        "sokoban/retracter/state_latest_2/q_28" BEL
+        "sokoban/retracter/state_latest_2/q_29" BEL
+        "sokoban/retracter/state_latest_2/q_30" BEL
+        "sokoban/retracter/state_latest_2/q_31" BEL
+        "sokoban/retracter/state_latest_2/q_32" BEL
+        "sokoban/retracter/state_latest_2/q_33" BEL
+        "sokoban/retracter/state_latest_2/q_34" BEL
+        "sokoban/retracter/state_latest_2/q_35" BEL
+        "sokoban/retracter/state_latest_2/q_36" BEL
+        "sokoban/retracter/state_latest_2/q_37" BEL
+        "sokoban/retracter/state_latest_2/q_38" BEL
+        "sokoban/retracter/state_latest_2/q_39" BEL
+        "sokoban/retracter/state_latest_2/q_40" BEL
+        "sokoban/retracter/state_latest_2/q_41" BEL
+        "sokoban/retracter/state_latest_2/q_42" BEL
+        "sokoban/retracter/state_latest_2/q_43" BEL
+        "sokoban/retracter/state_latest_2/q_44" BEL
+        "sokoban/retracter/state_latest_2/q_45" BEL
+        "sokoban/retracter/state_latest_2/q_46" BEL
+        "sokoban/retracter/state_latest_2/q_47" BEL
+        "sokoban/retracter/state_latest_2/q_48" BEL
+        "sokoban/retracter/state_latest_2/q_49" BEL
+        "sokoban/retracter/state_latest_2/q_50" BEL
+        "sokoban/retracter/state_latest_2/q_51" BEL
+        "sokoban/retracter/state_latest_2/q_52" BEL
+        "sokoban/retracter/state_latest_2/q_53" BEL
+        "sokoban/retracter/state_latest_2/q_54" BEL
+        "sokoban/retracter/state_latest_2/q_55" BEL
+        "sokoban/retracter/state_latest_2/q_56" BEL
+        "sokoban/retracter/state_latest_2/q_57" BEL
+        "sokoban/retracter/state_latest_2/q_58" BEL
+        "sokoban/retracter/state_latest_2/q_59" BEL
+        "sokoban/retracter/state_latest_2/q_60" BEL
+        "sokoban/retracter/state_latest_2/q_61" BEL
+        "sokoban/retracter/state_latest_2/q_62" BEL
+        "sokoban/retracter/state_latest_2/q_63" BEL
+        "sokoban/retracter/state_latest_2/q_64" BEL
+        "sokoban/retracter/state_latest_2/q_65" BEL
+        "sokoban/retracter/state_latest_2/q_66" BEL
+        "sokoban/retracter/state_latest_2/q_67" BEL
+        "sokoban/retracter/state_latest_2/q_68" BEL
+        "sokoban/retracter/state_latest_2/q_69" BEL
+        "sokoban/retracter/state_latest_2/q_70" BEL
+        "sokoban/retracter/state_latest_2/q_71" BEL
+        "sokoban/retracter/state_latest_2/q_72" BEL
+        "sokoban/retracter/state_latest_2/q_73" BEL
+        "sokoban/retracter/state_latest_2/q_74" BEL
+        "sokoban/retracter/state_latest_2/q_75" BEL
+        "sokoban/retracter/state_latest_2/q_76" BEL
+        "sokoban/retracter/state_latest_2/q_77" BEL
+        "sokoban/retracter/state_latest_2/q_78" BEL
+        "sokoban/retracter/state_latest_2/q_79" BEL
+        "sokoban/retracter/state_latest_2/q_80" BEL
+        "sokoban/retracter/state_latest_2/q_81" BEL
+        "sokoban/retracter/state_latest_2/q_82" BEL
+        "sokoban/retracter/state_latest_2/q_83" BEL
+        "sokoban/retracter/state_latest_2/q_84" BEL
+        "sokoban/retracter/state_latest_2/q_85" BEL
+        "sokoban/retracter/state_latest_2/q_86" BEL
+        "sokoban/retracter/state_latest_2/q_87" BEL
+        "sokoban/retracter/state_latest_2/q_88" BEL
+        "sokoban/retracter/state_latest_2/q_89" BEL
+        "sokoban/retracter/state_latest_2/q_90" BEL
+        "sokoban/retracter/state_latest_2/q_91" BEL
+        "sokoban/retracter/state_latest_2/q_92" BEL
+        "sokoban/retracter/state_latest_2/q_93" BEL
+        "sokoban/retracter/state_latest_2/q_94" BEL
+        "sokoban/retracter/state_latest_2/q_95" BEL
+        "sokoban/retracter/state_latest_2/q_96" BEL
+        "sokoban/retracter/state_latest_2/q_97" BEL
+        "sokoban/retracter/state_latest_2/q_98" BEL
+        "sokoban/retracter/state_latest_2/q_99" BEL
+        "sokoban/retracter/state_latest_2/q_100" BEL
+        "sokoban/retracter/state_latest_2/q_101" BEL
+        "sokoban/retracter/state_latest_2/q_102" BEL
+        "sokoban/retracter/state_latest_2/q_103" BEL
+        "sokoban/retracter/state_latest_2/q_104" BEL
+        "sokoban/retracter/state_latest_2/q_105" BEL
+        "sokoban/retracter/state_latest_2/q_106" BEL
+        "sokoban/retracter/state_latest_2/q_107" BEL
+        "sokoban/retracter/state_latest_2/q_108" BEL
+        "sokoban/retracter/state_latest_2/q_109" BEL
+        "sokoban/retracter/state_latest_2/q_110" BEL
+        "sokoban/retracter/state_latest_2/q_111" BEL
+        "sokoban/retracter/state_latest_2/q_112" BEL
+        "sokoban/retracter/state_latest_2/q_113" BEL
+        "sokoban/retracter/state_latest_2/q_114" BEL
+        "sokoban/retracter/state_latest_2/q_115" BEL
+        "sokoban/retracter/state_latest_2/q_116" BEL
+        "sokoban/retracter/state_latest_2/q_117" BEL
+        "sokoban/retracter/state_latest_2/q_118" BEL
+        "sokoban/retracter/state_latest_2/q_119" BEL
+        "sokoban/retracter/state_latest_2/q_120" BEL
+        "sokoban/retracter/state_latest_2/q_121" BEL
+        "sokoban/retracter/state_latest_2/q_122" BEL
+        "sokoban/retracter/state_latest_2/q_123" BEL
+        "sokoban/retracter/state_latest_2/q_124" BEL
+        "sokoban/retracter/state_latest_2/q_125" BEL
+        "sokoban/retracter/state_latest_2/q_126" BEL
+        "sokoban/retracter/state_latest_2/q_127" BEL
+        "sokoban/retracter/state_latest_2/q_128" BEL
+        "sokoban/retracter/state_latest_2/q_129" BEL
+        "sokoban/retracter/state_latest_2/q_130" BEL
+        "sokoban/retracter/state_latest_2/q_131" BEL
+        "sokoban/retracter/state_latest_2/q_132" BEL
+        "sokoban/retracter/state_latest_2/q_133" BEL
+        "sokoban/retracter/state_latest_1/q_0" BEL
+        "sokoban/retracter/state_latest_1/q_1" BEL
+        "sokoban/retracter/state_latest_1/q_2" BEL
+        "sokoban/retracter/state_latest_1/q_3" BEL
+        "sokoban/retracter/state_latest_1/q_4" BEL
+        "sokoban/retracter/state_latest_1/q_5" BEL
+        "sokoban/retracter/state_latest_1/q_6" BEL
+        "sokoban/retracter/state_latest_1/q_7" BEL
+        "sokoban/retracter/state_latest_1/q_8" BEL
+        "sokoban/retracter/state_latest_1/q_9" BEL
+        "sokoban/retracter/state_latest_1/q_10" BEL
+        "sokoban/retracter/state_latest_1/q_11" BEL
+        "sokoban/retracter/state_latest_1/q_12" BEL
+        "sokoban/retracter/state_latest_1/q_13" BEL
+        "sokoban/retracter/state_latest_1/q_14" BEL
+        "sokoban/retracter/state_latest_1/q_15" BEL
+        "sokoban/retracter/state_latest_1/q_16" BEL
+        "sokoban/retracter/state_latest_1/q_17" BEL
+        "sokoban/retracter/state_latest_1/q_18" BEL
+        "sokoban/retracter/state_latest_1/q_19" BEL
+        "sokoban/retracter/state_latest_1/q_20" BEL
+        "sokoban/retracter/state_latest_1/q_21" BEL
+        "sokoban/retracter/state_latest_1/q_22" BEL
+        "sokoban/retracter/state_latest_1/q_23" BEL
+        "sokoban/retracter/state_latest_1/q_24" BEL
+        "sokoban/retracter/state_latest_1/q_25" BEL
+        "sokoban/retracter/state_latest_1/q_26" BEL
+        "sokoban/retracter/state_latest_1/q_27" BEL
+        "sokoban/retracter/state_latest_1/q_28" BEL
+        "sokoban/retracter/state_latest_1/q_29" BEL
+        "sokoban/retracter/state_latest_1/q_30" BEL
+        "sokoban/retracter/state_latest_1/q_31" BEL
+        "sokoban/retracter/state_latest_1/q_32" BEL
+        "sokoban/retracter/state_latest_1/q_33" BEL
+        "sokoban/retracter/state_latest_1/q_34" BEL
+        "sokoban/retracter/state_latest_1/q_35" BEL
+        "sokoban/retracter/state_latest_1/q_36" BEL
+        "sokoban/retracter/state_latest_1/q_37" BEL
+        "sokoban/retracter/state_latest_1/q_38" BEL
+        "sokoban/retracter/state_latest_1/q_39" BEL
+        "sokoban/retracter/state_latest_1/q_40" BEL
+        "sokoban/retracter/state_latest_1/q_41" BEL
+        "sokoban/retracter/state_latest_1/q_42" BEL
+        "sokoban/retracter/state_latest_1/q_43" BEL
+        "sokoban/retracter/state_latest_1/q_44" BEL
+        "sokoban/retracter/state_latest_1/q_45" BEL
+        "sokoban/retracter/state_latest_1/q_46" BEL
+        "sokoban/retracter/state_latest_1/q_47" BEL
+        "sokoban/retracter/state_latest_1/q_48" BEL
+        "sokoban/retracter/state_latest_1/q_49" BEL
+        "sokoban/retracter/state_latest_1/q_50" BEL
+        "sokoban/retracter/state_latest_1/q_51" BEL
+        "sokoban/retracter/state_latest_1/q_52" BEL
+        "sokoban/retracter/state_latest_1/q_53" BEL
+        "sokoban/retracter/state_latest_1/q_54" BEL
+        "sokoban/retracter/state_latest_1/q_55" BEL
+        "sokoban/retracter/state_latest_1/q_56" BEL
+        "sokoban/retracter/state_latest_1/q_57" BEL
+        "sokoban/retracter/state_latest_1/q_58" BEL
+        "sokoban/retracter/state_latest_1/q_59" BEL
+        "sokoban/retracter/state_latest_1/q_60" BEL
+        "sokoban/retracter/state_latest_1/q_61" BEL
+        "sokoban/retracter/state_latest_1/q_62" BEL
+        "sokoban/retracter/state_latest_1/q_63" BEL
+        "sokoban/retracter/state_latest_1/q_64" BEL
+        "sokoban/retracter/state_latest_1/q_65" BEL
+        "sokoban/retracter/state_latest_1/q_66" BEL
+        "sokoban/retracter/state_latest_1/q_67" BEL
+        "sokoban/retracter/state_latest_1/q_68" BEL
+        "sokoban/retracter/state_latest_1/q_69" BEL
+        "sokoban/retracter/state_latest_1/q_70" BEL
+        "sokoban/retracter/state_latest_1/q_71" BEL
+        "sokoban/retracter/state_latest_1/q_72" BEL
+        "sokoban/retracter/state_latest_1/q_73" BEL
+        "sokoban/retracter/state_latest_1/q_74" BEL
+        "sokoban/retracter/state_latest_1/q_75" BEL
+        "sokoban/retracter/state_latest_1/q_76" BEL
+        "sokoban/retracter/state_latest_1/q_77" BEL
+        "sokoban/retracter/state_latest_1/q_78" BEL
+        "sokoban/retracter/state_latest_1/q_79" BEL
+        "sokoban/retracter/state_latest_1/q_80" BEL
+        "sokoban/retracter/state_latest_1/q_81" BEL
+        "sokoban/retracter/state_latest_1/q_82" BEL
+        "sokoban/retracter/state_latest_1/q_83" BEL
+        "sokoban/retracter/state_latest_1/q_84" BEL
+        "sokoban/retracter/state_latest_1/q_85" BEL
+        "sokoban/retracter/state_latest_1/q_86" BEL
+        "sokoban/retracter/state_latest_1/q_87" BEL
+        "sokoban/retracter/state_latest_1/q_88" BEL
+        "sokoban/retracter/state_latest_1/q_89" BEL
+        "sokoban/retracter/state_latest_1/q_90" BEL
+        "sokoban/retracter/state_latest_1/q_91" BEL
+        "sokoban/retracter/state_latest_1/q_92" BEL
+        "sokoban/retracter/state_latest_1/q_93" BEL
+        "sokoban/retracter/state_latest_1/q_94" BEL
+        "sokoban/retracter/state_latest_1/q_95" BEL
+        "sokoban/retracter/state_latest_1/q_96" BEL
+        "sokoban/retracter/state_latest_1/q_97" BEL
+        "sokoban/retracter/state_latest_1/q_98" BEL
+        "sokoban/retracter/state_latest_1/q_99" BEL
+        "sokoban/retracter/state_latest_1/q_100" BEL
+        "sokoban/retracter/state_latest_1/q_101" BEL
+        "sokoban/retracter/state_latest_1/q_102" BEL
+        "sokoban/retracter/state_latest_1/q_103" BEL
+        "sokoban/retracter/state_latest_1/q_104" BEL
+        "sokoban/retracter/state_latest_1/q_105" BEL
+        "sokoban/retracter/state_latest_1/q_106" BEL
+        "sokoban/retracter/state_latest_1/q_107" BEL
+        "sokoban/retracter/state_latest_1/q_108" BEL
+        "sokoban/retracter/state_latest_1/q_109" BEL
+        "sokoban/retracter/state_latest_1/q_110" BEL
+        "sokoban/retracter/state_latest_1/q_111" BEL
+        "sokoban/retracter/state_latest_1/q_112" BEL
+        "sokoban/retracter/state_latest_1/q_113" BEL
+        "sokoban/retracter/state_latest_1/q_114" BEL
+        "sokoban/retracter/state_latest_1/q_115" BEL
+        "sokoban/retracter/state_latest_1/q_116" BEL
+        "sokoban/retracter/state_latest_1/q_117" BEL
+        "sokoban/retracter/state_latest_1/q_118" BEL
+        "sokoban/retracter/state_latest_1/q_119" BEL
+        "sokoban/retracter/state_latest_1/q_120" BEL
+        "sokoban/retracter/state_latest_1/q_121" BEL
+        "sokoban/retracter/state_latest_1/q_122" BEL
+        "sokoban/retracter/state_latest_1/q_123" BEL
+        "sokoban/retracter/state_latest_1/q_124" BEL
+        "sokoban/retracter/state_latest_1/q_125" BEL
+        "sokoban/retracter/state_latest_1/q_126" BEL
+        "sokoban/retracter/state_latest_1/q_127" BEL
+        "sokoban/retracter/state_latest_1/q_128" BEL
+        "sokoban/retracter/state_latest_1/q_129" BEL
+        "sokoban/retracter/state_latest_1/q_130" BEL
+        "sokoban/retracter/state_latest_1/q_131" BEL
+        "sokoban/retracter/state_latest_1/q_132" BEL
+        "sokoban/retracter/state_latest_1/q_133" BEL
+        "sokoban/retracter/state_now/q_0" BEL
+        "sokoban/retracter/state_now/q_1" BEL
+        "sokoban/retracter/state_now/q_2" BEL
+        "sokoban/retracter/state_now/q_3" BEL
+        "sokoban/retracter/state_now/q_4" BEL
+        "sokoban/retracter/state_now/q_5" BEL
+        "sokoban/retracter/state_now/q_6" BEL
+        "sokoban/retracter/state_now/q_7" BEL
+        "sokoban/retracter/state_now/q_8" BEL
+        "sokoban/retracter/state_now/q_9" BEL
+        "sokoban/retracter/state_now/q_10" BEL
+        "sokoban/retracter/state_now/q_11" BEL
+        "sokoban/retracter/state_now/q_12" BEL
+        "sokoban/retracter/state_now/q_13" BEL
+        "sokoban/retracter/state_now/q_14" BEL
+        "sokoban/retracter/state_now/q_15" BEL
+        "sokoban/retracter/state_now/q_16" BEL
+        "sokoban/retracter/state_now/q_17" BEL
+        "sokoban/retracter/state_now/q_18" BEL
+        "sokoban/retracter/state_now/q_19" BEL
+        "sokoban/retracter/state_now/q_20" BEL
+        "sokoban/retracter/state_now/q_21" BEL
+        "sokoban/retracter/state_now/q_22" BEL
+        "sokoban/retracter/state_now/q_23" BEL
+        "sokoban/retracter/state_now/q_24" BEL
+        "sokoban/retracter/state_now/q_25" BEL
+        "sokoban/retracter/state_now/q_26" BEL
+        "sokoban/retracter/state_now/q_27" BEL
+        "sokoban/retracter/state_now/q_28" BEL
+        "sokoban/retracter/state_now/q_29" BEL
+        "sokoban/retracter/state_now/q_30" BEL
+        "sokoban/retracter/state_now/q_31" BEL
+        "sokoban/retracter/state_now/q_32" BEL
+        "sokoban/retracter/state_now/q_33" BEL
+        "sokoban/retracter/state_now/q_34" BEL
+        "sokoban/retracter/state_now/q_35" BEL
+        "sokoban/retracter/state_now/q_36" BEL
+        "sokoban/retracter/state_now/q_37" BEL
+        "sokoban/retracter/state_now/q_38" BEL
+        "sokoban/retracter/state_now/q_39" BEL
+        "sokoban/retracter/state_now/q_40" BEL
+        "sokoban/retracter/state_now/q_41" BEL
+        "sokoban/retracter/state_now/q_42" BEL
+        "sokoban/retracter/state_now/q_43" BEL
+        "sokoban/retracter/state_now/q_44" BEL
+        "sokoban/retracter/state_now/q_45" BEL
+        "sokoban/retracter/state_now/q_46" BEL
+        "sokoban/retracter/state_now/q_47" BEL
+        "sokoban/retracter/state_now/q_48" BEL
+        "sokoban/retracter/state_now/q_49" BEL
+        "sokoban/retracter/state_now/q_50" BEL
+        "sokoban/retracter/state_now/q_51" BEL
+        "sokoban/retracter/state_now/q_52" BEL
+        "sokoban/retracter/state_now/q_53" BEL
+        "sokoban/retracter/state_now/q_54" BEL
+        "sokoban/retracter/state_now/q_55" BEL
+        "sokoban/retracter/state_now/q_56" BEL
+        "sokoban/retracter/state_now/q_57" BEL
+        "sokoban/retracter/state_now/q_58" BEL
+        "sokoban/retracter/state_now/q_59" BEL
+        "sokoban/retracter/state_now/q_60" BEL
+        "sokoban/retracter/state_now/q_61" BEL
+        "sokoban/retracter/state_now/q_62" BEL
+        "sokoban/retracter/state_now/q_63" BEL
+        "sokoban/retracter/state_now/q_64" BEL
+        "sokoban/retracter/state_now/q_65" BEL
+        "sokoban/retracter/state_now/q_66" BEL
+        "sokoban/retracter/state_now/q_67" BEL
+        "sokoban/retracter/state_now/q_68" BEL
+        "sokoban/retracter/state_now/q_69" BEL
+        "sokoban/retracter/state_now/q_70" BEL
+        "sokoban/retracter/state_now/q_71" BEL
+        "sokoban/retracter/state_now/q_72" BEL
+        "sokoban/retracter/state_now/q_73" BEL
+        "sokoban/retracter/state_now/q_74" BEL
+        "sokoban/retracter/state_now/q_75" BEL
+        "sokoban/retracter/state_now/q_76" BEL
+        "sokoban/retracter/state_now/q_77" BEL
+        "sokoban/retracter/state_now/q_78" BEL
+        "sokoban/retracter/state_now/q_79" BEL
+        "sokoban/retracter/state_now/q_80" BEL
+        "sokoban/retracter/state_now/q_81" BEL
+        "sokoban/retracter/state_now/q_82" BEL
+        "sokoban/retracter/state_now/q_83" BEL
+        "sokoban/retracter/state_now/q_84" BEL
+        "sokoban/retracter/state_now/q_85" BEL
+        "sokoban/retracter/state_now/q_86" BEL
+        "sokoban/retracter/state_now/q_87" BEL
+        "sokoban/retracter/state_now/q_88" BEL
+        "sokoban/retracter/state_now/q_89" BEL
+        "sokoban/retracter/state_now/q_90" BEL
+        "sokoban/retracter/state_now/q_91" BEL
+        "sokoban/retracter/state_now/q_92" BEL
+        "sokoban/retracter/state_now/q_93" BEL
+        "sokoban/retracter/state_now/q_94" BEL
+        "sokoban/retracter/state_now/q_95" BEL
+        "sokoban/retracter/state_now/q_96" BEL
+        "sokoban/retracter/state_now/q_97" BEL
+        "sokoban/retracter/state_now/q_98" BEL
+        "sokoban/retracter/state_now/q_99" BEL
+        "sokoban/retracter/state_now/q_100" BEL
+        "sokoban/retracter/state_now/q_101" BEL
+        "sokoban/retracter/state_now/q_102" BEL
+        "sokoban/retracter/state_now/q_103" BEL
+        "sokoban/retracter/state_now/q_104" BEL
+        "sokoban/retracter/state_now/q_105" BEL
+        "sokoban/retracter/state_now/q_106" BEL
+        "sokoban/retracter/state_now/q_107" BEL
+        "sokoban/retracter/state_now/q_108" BEL
+        "sokoban/retracter/state_now/q_109" BEL
+        "sokoban/retracter/state_now/q_110" BEL
+        "sokoban/retracter/state_now/q_111" BEL
+        "sokoban/retracter/state_now/q_112" BEL
+        "sokoban/retracter/state_now/q_113" BEL
+        "sokoban/retracter/state_now/q_114" BEL
+        "sokoban/retracter/state_now/q_115" BEL
+        "sokoban/retracter/state_now/q_116" BEL
+        "sokoban/retracter/state_now/q_117" BEL
+        "sokoban/retracter/state_now/q_118" BEL
+        "sokoban/retracter/state_now/q_119" BEL
+        "sokoban/retracter/state_now/q_120" BEL
+        "sokoban/retracter/state_now/q_121" BEL
+        "sokoban/retracter/state_now/q_122" BEL
+        "sokoban/retracter/state_now/q_123" BEL
+        "sokoban/retracter/state_now/q_124" BEL
+        "sokoban/retracter/state_now/q_125" BEL
+        "sokoban/retracter/state_now/q_126" BEL
+        "sokoban/retracter/state_now/q_127" BEL
+        "sokoban/retracter/state_now/q_128" BEL
+        "sokoban/retracter/state_now/q_129" BEL
+        "sokoban/retracter/state_now/q_130" BEL
+        "sokoban/retracter/state_now/q_131" BEL
+        "sokoban/retracter/state_now/q_132" BEL
+        "sokoban/retracter/state_now/q_133" BEL
+        "sokoban/controller/state_FFd3" BEL "sokoban/controller/state_FFd1"
+        BEL "sokoban/controller/state_FFd2" BEL
+        "sokoban/controller/state_FFd4" BEL "sokoban/controller/state_FFd10"
+        BEL "sokoban/stage_counter/q_1" BEL "sokoban/stage_counter/q_0" BEL
+        "sokoban/step_counter/q_7" BEL "sokoban/step_counter/q_6" BEL
+        "sokoban/step_counter/q_5" BEL "sokoban/step_counter/q_4" BEL
+        "sokoban/step_counter/q_3" BEL "sokoban/step_counter/q_2" BEL
+        "sokoban/step_counter/q_1" BEL "sokoban/step_counter/q_0" BEL
+        "sokoban/direction_1" BEL "sokoban/direction_0" BEL
+        "display_inst/layer_bottom_inst/number_disp_step/zk_0" BEL
+        "display_inst/layer_bottom_inst/number_disp_step/zk_1" BEL
+        "display_inst/layer_bottom_inst/number_disp_step/zk_2" BEL
+        "display_inst/layer_bottom_inst/number_disp_step/zk_3" BEL
+        "display_inst/layer_bottom_inst/number_disp_step/zk_4" BEL
+        "display_inst/layer_bottom_inst/word_disp_message/word_0" BEL
+        "display_inst/layer_bottom_inst/word_disp_message/word_2" BEL
+        "display_inst/layer_bottom_inst/word_disp_message/word_3" BEL
+        "display_inst/layer_bottom_inst/letter_disp_level/zk_0" BEL
+        "display_inst/layer_bottom_inst/letter_disp_level/zk_1" BEL
+        "display_inst/layer_bottom_inst/letter_disp_level/zk_2" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retry/zk_0" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retry/zk_2" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retry/zk_4" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retract/zk_2" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retract/zk_3" BEL
+        "display_inst/layer_bottom_inst/letter_disp_next/zk_0" BEL
+        "display_inst/layer_bottom_inst/letter_disp_next/zk_2" BEL
+        "display_inst/layer_bottom_inst/letter_disp_next/zk_4" BEL
+        "keyboard/ps2_dcm_inst/CLKDV_OUT" BEL "minesweeper/random/rand_ff_5"
+        BEL "minesweeper/random/rand_ff_4" BEL "minesweeper/random/rand_ff_3"
+        BEL "minesweeper/random/rand_ff_2" BEL "minesweeper/random/rand_ff_0"
+        BEL "display_inst/layer_bottom_inst/letter_disp_level/zk_3" BEL
+        "display_inst/layer_bottom_inst/letter_disp_level/zk_4" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retry/zk_1" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retry/zk_3" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retract/zk_0" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retract/zk_1" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retract/zk_4" BEL
+        "display_inst/layer_bottom_inst/letter_disp_next/zk_1" BEL
+        "display_inst/layer_bottom_inst/letter_disp_next/zk_3" BEL
+        "mouse/fallingtest/state_FFd2" BEL "mouse/controller/state_FFd7" BEL
+        "mouse/controller/state_FFd6" BEL "mouse/controller/state_FFd4" BEL
+        "minesweeper/ms_game/state_3" BEL "minesweeper/ms_game/state_2" BEL
+        "minesweeper/ms_game/state_1" BEL "minesweeper/ms_game/state_0" BEL
+        "sokoban/controller/state_FFd5" BEL "sokoban/controller/state_FFd8"
+        BEL "sokoban/controller/state_FFd6" BEL
+        "sokoban/controller/state_FFd7" BEL "sokoban/controller/state_FFd9"
+        BEL "vga_ctrl/h_control/state_FFd2" BEL
+        "vga_ctrl/h_control/state_FFd1" BEL "switcher/state_FFd2" BEL
+        "mouse/fallingtest/state_FFd1" BEL "mouse/controller/state_FFd1" BEL
+        "display_inst/layer_bottom_inst/word_disp_message/word_1" BEL
+        "mouse/ps2_data_programme/cursor_1_1" BEL
+        "mouse/ps2_data_programme/cursor_5_1" BEL
+        "mouse/ps2_data_programme/cursor_0_1" BEL
+        "mouse/ps2_data_programme/cursor_2_1" BEL
+        "sokoban/retracter/state_now/q_0_1" BEL
+        "sokoban/retracter/state_now/q_1_1" BEL
+        "sokoban/retracter/state_now/q_4_1" BEL
+        "sokoban/retracter/state_now/q_3_1" BEL
+        "mouse/ps2_data_programme/cursor_3_1" BEL
+        "mouse/ps2_data_programme/cursor_4_1" BEL
+        "sokoban/retracter/state_now/q_0_2" BEL
+        "sokoban/controller/state_FFd2_1" BEL
+        "sokoban/controller/state_FFd3_1" BEL
+        "display_inst/layer_mid_2_inst/man_inst_up/B6.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_up/B10.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_right/B6.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_right/B10.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_left/B6.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_left/B10.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_down/B6.A" BEL
+        "display_inst/layer_mid_2_inst/man_inst_down/B10.A" BEL
+        "display_inst/layer_mid_1_inst/wall_inst/B6.A" BEL
+        "display_inst/layer_mid_1_inst/wall_inst/B10.A" BEL
+        "display_inst/layer_mid_1_inst/way_inst/B6.A" BEL
+        "display_inst/layer_mid_1_inst/way_inst/B10.A" BEL
+        "display_inst/layer_mid_1_inst/box_dst_inst/B6.A" BEL
+        "display_inst/layer_mid_1_inst/box_dst_inst/B10.A" BEL
+        "display_inst/layer_mid_1_inst/dst_inst/B6.A" BEL
+        "display_inst/layer_mid_1_inst/dst_inst/B10.A" BEL
+        "display_inst/layer_mid_1_inst/box_inst/B6.A" BEL
+        "display_inst/layer_mid_1_inst/box_inst/B10.A" BEL
+        "display_inst/layer_mine/doubt_inst/B6.A" BEL
+        "display_inst/layer_mine/doubt_inst/B10.A" BEL
+        "display_inst/layer_mine/mine_open_inst/B6.A" BEL
+        "display_inst/layer_mine/mine_open_inst/B10.A" BEL
+        "display_inst/layer_mine/cell_inst/B6.A" BEL
+        "display_inst/layer_mine/cell_inst/B10.A" BEL
+        "display_inst/layer_mine/flag_inst/B6.A" BEL
+        "display_inst/layer_mine/flag_inst/B10.A" BEL
+        "display_inst/layer_mine/open_inst/B6.A" BEL
+        "display_inst/layer_mine/open_inst/B9.A" BEL
+        "display_inst/layer_mine/open_inst/B12.A" BEL
+        "display_inst/layer_mine/open_inst/B15.A" BEL
+        "display_inst/layer_mine/open_inst/B18.A" BEL
+        "display_inst/layer_mine/open_inst/B21.A" BEL
+        "display_inst/layer_mine/open_inst/B24.A" BEL
+        "display_inst/layer_mine/open_inst/B27.A" BEL
+        "display_inst/layer_mine/open_inst/B30.A" BEL
+        "display_inst/layer_mine/open_inst/BU34" BEL
+        "display_inst/layer_mine/open_inst/BU37" BEL
+        "display_inst/layer_mine/open_inst/BU40" BEL
+        "display_inst/layer_mine/open_inst/BU43" BEL
+        "display_inst/layer_mine/open_inst/B667.A" BEL
+        "display_inst/layer_mine/open_inst/B670.A" BEL
+        "display_inst/layer_mine/open_inst/B673.A" BEL
+        "display_inst/layer_mine/open_inst/BU677" BEL
+        "display_inst/layer_mine/open_inst/BU680" BEL
+        "display_inst/layer_mine/open_inst/B749.A" BEL
+        "display_inst/layer_mine/open_inst/B753.A" BEL
+        "display_inst/layer_bottom_inst/number_disp_step/ZkROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/word_disp_message/wordROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/letter_disp_level/ZkROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retry/ZkROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/letter_disp_retract/ZkROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/letter_disp_next/ZkROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B6.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B9.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B12.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B15.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B18.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B21.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B24.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B27.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/BU31" BEL
+        "display_inst/layer_bottom_inst/bottomROM/BU34" BEL
+        "display_inst/layer_bottom_inst/bottomROM/BU37" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B317.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B320.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B323.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B326.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B329.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B332.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B335.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B338.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/BU342" BEL
+        "display_inst/layer_bottom_inst/bottomROM/BU345" BEL
+        "display_inst/layer_bottom_inst/bottomROM/BU348" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B628.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B632.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B636.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B640.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B644.A" BEL
+        "display_inst/layer_bottom_inst/bottomROM/B648.A" BEL "pixel_clk";
+PIN dcm_inst/DCM_INST_pins<10> = BEL "dcm_inst/DCM_INST" PINNAME CLKIN;
+TIMEGRP clk = PIN "dcm_inst/DCM_INST_pins<10>";
+TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+TS_dcm_inst_CLKDV_BUF = PERIOD TIMEGRP "dcm_inst_CLKDV_BUF" TS_clk * 2 HIGH
+        50%;
+SCHEMATIC END;

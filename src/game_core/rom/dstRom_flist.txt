@@ -1,0 +1,12 @@
+# Output products list for <dstRom>
+dstRom.asy
+dstRom.mif
+dstRom.ngc
+dstRom.sym
+dstRom.v
+dstRom.veo
+dstRom.vhd
+dstRom.vho
+dstRom.xco
+dstRom_flist.txt
+dstRom_xmdf.tcl

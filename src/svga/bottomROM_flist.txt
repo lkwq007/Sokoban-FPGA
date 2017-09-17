@@ -1,0 +1,11 @@
+# Output products list for <bottomROM>
+bottomROM.asy
+bottomROM.ngc
+bottomROM.sym
+bottomROM.v
+bottomROM.veo
+bottomROM.vhd
+bottomROM.vho
+bottomROM.xco
+bottomROM_flist.txt
+bottomROM_xmdf.tcl
